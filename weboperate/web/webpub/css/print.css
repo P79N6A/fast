@@ -1,0 +1,217 @@
+@charset "utf-8";
+
+.main_print_nr {
+    width: 1000px;
+}
+
+.danjuElement {
+    position: relative;
+    margin-top: 10px;
+}
+
+#danjuContent .danjuElement {
+    border: #ddd dashed 1px;
+    background-color: #fafafa;
+}
+
+.danjuElement span {
+    padding: 2px;
+    display: inline-table;
+    position: absolute;
+}
+
+#danjuContent .danjuElement span {
+    border: #ccc solid 1px;
+    background-color: #ADE4AD;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+    cursor: move;
+}
+
+#danjuContent h3 {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    font-family: "微软雅黑";
+}
+
+#danjuContent .danjuElement .current {
+    background-color: #FFCAA8;
+    cursor: move;
+    filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+#danjuContent #addElement {
+    border: #f60 dashed 1px;
+}
+
+.areaBox {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-color: #fafafa #666 #666 #fafafa;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    width: 0;
+    height: 0;
+    cursor: n-resize;
+}
+.printTable {
+    margin-top: 5px;
+}
+
+.printTable th {
+  /*  border-bottom: #000 solid 1px;*/
+    padding: 1px;
+    text-align: center;
+}
+
+.printTable td {
+ /*  border-bottom: #000 dashed 1px;*/
+    padding: 1px;
+    text-align: center;
+}
+
+.toBePrintTop {
+    width: 200px;
+    margin-top: 30px;
+    background-color: #fafafa;
+    border: #666 solid 1px;
+}
+
+.toBePrintBottom {
+    width: 200px;
+    margin-top: 10px;
+    background-color: #fafafa;
+    border: #666 solid 1px;
+}
+
+.toBePrint {
+    width: 310px;
+    margin-top: 10px;
+    background-color: #fafafa;
+    border: #666 solid 1px;
+}
+
+.toBePrint h2 {
+    font-size: 12px;
+    background-color: #ccc;
+    padding: 10px;
+}
+
+#overall_font {
+    padding: 5px 10px;
+}
+
+.printNr {
+    padding: 5px 0;
+    height: 300px;
+    overflow: auto;
+}
+
+.printNr a {
+    display: block;
+    padding: 5px 10px;
+    border: #fafafa solid 1px;
+}
+
+.printNr a:hover {
+    background-color: #E9EFF6;
+    border: #5690D2 solid 1px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.printStyle {
+    border: #ddd solid 1px;
+    padding: 5px 10px;
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    background-color: #fff;
+}
+
+#viewDanju {
+    border: #ddd solid 1px;
+    background-color: #fafafa;
+    margin: 10px auto;
+}
+
+#viewDanju h3 {
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 0;
+    font-family: "微软雅黑";
+}
+
+#viewDanju table th {
+    background:none;
+    border:1px solid #d4d4d4;
+}
+
+.submenu {
+    background: #eceff4;
+    border: 1px solid #adbed2;
+    margin-top: 8px;
+}
+
+.subhead {
+    cursor: pointer;
+    color: #3a558a;
+    height: 25px;
+    line-height: 25px;
+
+    font-weight: bold;
+    font-size: 9pt;
+    text-align: left;
+    text-indent: 1em;
+}
+
+.submain ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.submain ul li img {
+    padding-right: 5px;
+    vertical-align: middle;
+}
+
+.submain ul li {
+    padding: 2px 2px 2px 10px;
+    font-size: 12px;
+    border-bottom: 1px solid #aab5d5;
+    background: #fff;
+}
+
+.submain ul li #inactive {
+    color: #999;
+}
+#div_op_area input[type="button"],
+
+
+.op_table_col{
+	background:url(right-top-tab-bg1.png) repeat-x 0 0;
+    border:1px solid #B9C4CA;
+    cursor:pointer;
+    display:inline-block;
+    height: 21px;
+    line-height:21px;
+    margin:0 0 3px 3px ;
+}
+#danju_print_content{ margin:0 0 0 3px;}
+
+#danju_print_content table th {
+    background:none;
+    border:1px solid #d4d4d4;
+}
+
+#danju_print_content table tbody td{
+    height:30px; color:#333; border:1px solid #d4d4d4;
+}
+
+#div_op_area table tbody td{
+    height:30px; color:#333; border:1px solid #d4d4d4;
+}

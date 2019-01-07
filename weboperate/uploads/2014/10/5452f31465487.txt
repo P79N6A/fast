@@ -1,0 +1,8 @@
+﻿SimpleXMLElement::__set_state(array(
+   'ToUserName' => 'gh_cf0d56736878',
+   'FromUserName' => 'oEqUCj2yGXKUkIlGjWZ27XdlOPBw',
+   'CreateTime' => '1412066014',
+   'MsgType' => 'text',
+   'Content' => '。。',
+   'MsgId' => '6064777350125275867',
+))

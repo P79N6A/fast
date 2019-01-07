@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <cote action_id="501000000" action_name="管理中心" action_code="glzx" sort_order="1" parent_id="0" type="cote">
+        <group action_id="501010000" action_name="用户管理" action_code="glzx-yhgl" sort_order="1" parent_id="501000000" type="group">
+            <url action_id="501010100" action_name="个人信息" action_code="sys/user/detail_info" sort_order="1" parent_id="501010000" type="url">
+                <act action_id="501010101" action_name="编辑" action_code="sys/user/detail_info#scene=edit" sort_order="1" parent_id="501010100" type="act"/>
+                <act action_id="501010102" action_name="修改密码" action_code="sys/user/do_chgpasswd#app_scene=edit" sort_order="2" parent_id="501010100" type="act"/>
+            </url>
+            <url action_id="501010200" action_name="用户信息" action_code="sys/user/do_list" sort_order="2" parent_id="501010000" type="url">
+                <act action_id="501010201" action_name="查看" action_code="sys/user/detail#scene=view" sort_order="1" parent_id="501010200" type="act"/>
+                <act action_id="501010202" action_name="编辑" action_code="sys/user/detail#scene=edit" sort_order="2" parent_id="501010200" type="act"/>
+                <act action_id="501010203" action_name="角色列表" action_code="sys/user/role_list" sort_order="3" parent_id="501010200" type="act"/>
+                <act action_id="501010204" action_name="重置密码" action_code="sys/user/reset_pwd" sort_order="4" parent_id="501010200" type="act"/>
+            </url>
+            <url action_id="501010300" action_name="组织机构" action_code="sys/org/do_list" sort_order="3" parent_id="501010000" type="url"></url>
+            <url action_id="501010400" action_name="角色权限" action_code="sys/role/do_list" sort_order="4" parent_id="501010000" type="url">
+                <act action_id="501010401" action_name="新增" action_code="sys/role/detail#scene=add" sort_order="1" parent_id="501010400" type="act"/>
+                <act action_id="501010402" action_name="编辑" action_code="sys/role/detail#scene=edit" sort_order="2" parent_id="501010400" type="act"/>
+                <act action_id="501010403" action_name="权限" action_code="sys/role/allot#scene=edit" sort_order="3" parent_id="501010400" type="act"/>
+            </url>
+            <url action_id="501010500" action_name="岗位" action_code="archives/jobs/do_list" sort_order="5" parent_id="501010000" type="url">
+                <act action_id="501010501" action_name="新增" action_code="archives/jobs/detail#scene=add" sort_order="1" parent_id="501010500" type="act"/>
+                <act action_id="501010502" action_name="编辑" action_code="archives/jobs/detail#scene=edit" sort_order="2" parent_id="501010500" type="act"/>
+                <act action_id="501010503" action_name="启用" action_code="archives/jobs/set_active_enable" sort_order="3" parent_id="501010500" type="act"/>
+                <act action_id="501010504" action_name="停用" action_code="archives/jobs/set_active_disable" sort_order="4" parent_id="501010500" type="act"/>
+            </url>
+        </group>
+        <group action_id="501020000" action_name="系统管理" action_code="glzx-xtgl" sort_order="2" parent_id="501000000" type="group">
+            <url action_id="501020100" action_name="系统设置" action_code="" sort_order="1" parent_id="501020000" type="url">
+                <act action_id="501020101" action_name="编辑" action_code="" sort_order="1" parent_id="501020100" type="act"/>
+            </url>
+            <url action_id="501020200" action_name="公告信息" action_code="sys/notice/do_list" sort_order="2" parent_id="501020000" type="url">
+                <act action_id="501020201" action_name="新增" action_code="sys/notice/detail#scene=add" sort_order="1" parent_id="501020200" type="act"/>
+                <act action_id="501020202" action_name="编辑" action_code="sys/notice/detail#scene=edit" sort_order="2" parent_id="501020200" type="act"/>
+                <act action_id="501020203" action_name="审核" action_code="sys/notice/do_check" sort_order="3" parent_id="501020200" type="act"/>
+            </url>
+        </group>
+        <group action_id="501030000" action_name="API授权管理" action_code="glzx-sqgl" sort_order="3" parent_id="501000000" type="group">
+            <url action_id="501030100" action_name="API授权列表" action_code="" sort_order="1" parent_id="501030000" type="url">
+                <act action_id="501030101" action_name="新增" action_code="" sort_order="1" parent_id="501030100" type="act"/>
+                <act action_id="501030102" action_name="编辑" action_code="" sort_order="2" parent_id="501030100" type="act"/>
+            </url>
+        </group>
+    </cote>
+    <cote action_id="502000000" action_name="基础数据" action_code="jcsj" sort_order="2" parent_id="0" type="cote">
+        <group action_id="502010000" action_name="业务档案" action_code="jcsj-ywda" sort_order="1" parent_id="502000000" type="group">
+            <url action_id="502010100" action_name="平台列表" action_code="basedata/platform/do_list" sort_order="1" parent_id="502010000" type="url">
+                <act action_id="502010101" action_name="查看" action_code="basedata/platform/detail#scene=view" sort_order="1" parent_id="502010100" type="act"/>
+                <act action_id="502010102" action_name="编辑" action_code="basedata/platform/detail#scene=edit" sort_order="2" parent_id="502010100" type="act"/>
+                <act action_id="502010103" action_name="新增" action_code="basedata/platform/detail#scene=add" sort_order="3" parent_id="502010100" type="act"/>
+            </url>
+            <url action_id="502010200" action_name="云服务供应商列表" action_code="basedata/cloud/do_list" sort_order="2" parent_id="502010000" type="url">
+                <act action_id="502010201" action_name="查看" action_code="basedata/cloud/detail#scene=view" sort_order="1" parent_id="502010200" type="act"/>
+                <act action_id="502010202" action_name="新增" action_code="basedata/cloud/detail#scene=add" sort_order="2" parent_id="502010200" type="act"/>
+                <act action_id="502010203" action_name="编辑" action_code="basedata/cloud/detail#scene=edit" sort_order="3" parent_id="502010200" type="act"/>
+            </url>
+            <url action_id="502010300" action_name="行政区域对照" action_code="basedata/area/do_list" sort_order="3" parent_id="502010000" type="url">
+                
+            </url>
+        </group>
+        <group action_id="502020000" action_name="云服务档案" action_code="jcsj-yfwda" sort_order="2" parent_id="502000000" type="group">
+            <url action_id="502020100" action_name="云主机(VM)列表" action_code="basedata/hostinfo/do_list" sort_order="1" parent_id="502020000" type="url">
+                <act action_id="502020101" action_name="查看" action_code="basedata/hostinfo/detail#scene=view" sort_order="1" parent_id="502020100" type="act"/>
+                <act action_id="502020102" action_name="新增" action_code="basedata/hostinfo/detail#scene=add" sort_order="2" parent_id="502020100" type="act"/>
+                <act action_id="502020103" action_name="编辑" action_code="basedata/hostinfo/detail#scene=edit" sort_order="3" parent_id="502020100" type="act"/>
+                <act action_id="502020104" action_name="连接测试" action_code="basedata/hostinfo/net_test" sort_order="4" parent_id="502020100" type="act"/>
+                <act action_id="502020105" action_name="查看密码" action_code="basedata/hostinfo/viewpass" sort_order="5" parent_id="502020100" type="act"/>
+                <act action_id="502020106" action_name="修改密码" action_code="basedata/hostinfo/change_pass#scene=edit" sort_order="6" parent_id="502020100" type="act"/>
+                <act action_id="502020107" action_name="智能密码重置" action_code="basedata/hostinfo/do_reset_pass" sort_order="7" parent_id="502020100" type="act"/>
+                <act action_id="502020108" action_name="强制密码重置" action_code="basedata/hostinfo/forreset_pass#scene=edit" sort_order="8" parent_id="502020100" type="act"/>
+                <act action_id="502020109" action_name="启用" action_code="basedata/hostinfo/set_active_enable" sort_order="9" parent_id="502020100" type="act"/>
+                <act action_id="502020110" action_name="停用" action_code="basedata/hostinfo/set_active_disable" sort_order="10" parent_id="502020100" type="act"/>
+            </url>
+            <url action_id="502020200" action_name="云数据库(RDS)列表" action_code="basedata/rdsinfo/do_list" sort_order="2" parent_id="502020000" type="url">
+                <act action_id="502020201" action_name="查看" action_code="basedata/rdsinfo/detail#scene=view" sort_order="1" parent_id="502020200" type="act"/>
+                <act action_id="502020202" action_name="新增" action_code="basedata/rdsinfo/detail#scene=add" sort_order="2" parent_id="502020200" type="act"/>
+                <act action_id="502020203" action_name="编辑" action_code="basedata/rdsinfo/detail#scene=edit" sort_order="3" parent_id="502020200" type="act"/>
+                <act action_id="502020204" action_name="连接测试" action_code="basedata/rdsinfo/do_rds_test" sort_order="4" parent_id="502020200" type="act"/>
+                <act action_id="502020205" action_name="查看密码" action_code="basedata/rdsinfo/viewpass" sort_order="5" parent_id="502020200" type="act"/>
+                <act action_id="502020206" action_name="强制密码重置" action_code="basedata/rdsinfo/forreset_pass#scene=edit" sort_order="6" parent_id="502020200" type="act"/>
+                <act action_id="502020207" action_name="修改密码" action_code="basedata/rdsinfo/change_pass#scene=edit" sort_order="7" parent_id="502020200" type="act"/>
+                <act action_id="502020208" action_name="启用" action_code="basedata/rdsinfo/set_active_enable" sort_order="8" parent_id="502020200" type="act"/>
+                <act action_id="502020209" action_name="停用" action_code="basedata/rdsinfo/set_active_disable" sort_order="9" parent_id="502020200" type="act"/>
+            </url>
+        </group>
+        <group action_id="502030000" action_name="产品销售渠道" action_code="jcsj-cpxsqd" sort_order="3" parent_id="502000000" type="group">
+            <url action_id="502030100" action_name="产品销售渠道" action_code="basedata/sellchannel/do_list" sort_order="1" parent_id="502030000" type="url">
+                <act action_id="502030101" action_name="查看" action_code="basedata/sellchannel/detail#scene=view" sort_order="1" parent_id="502030100" type="act"/>
+                <act action_id="502030102" action_name="新增" action_code="basedata/sellchannel/detail#scene=add" sort_order="2" parent_id="502030100" type="act"/>
+                <act action_id="502030103" action_name="编辑" action_code="basedata/sellchannel/detail#scene=edit" sort_order="3" parent_id="502030100" type="act"/>
+            </url>
+        </group>
+    </cote>
+    <cote action_id="503000000" action_name="产品中心" action_code="cpzx" sort_order="3" parent_id="0" type="cote">
+        <group action_id="503010000" action_name="基础数据" action_code="cpzx-jcsj" sort_order="1" parent_id="503000000" type="group">
+            <url action_id="503010100" action_name="产品平台KEY管理" action_code="sys/session/index" sort_order="1" parent_id="503010000" type="url">
+                <act action_id="503010101" action_name="查看" action_code="sys/session/detail#app_scene=view" sort_order="1" parent_id="503010100" type="act"/>
+                <act action_id="503010102" action_name="新增" action_code="sys/session/detail#app_scene=add" sort_order="2" parent_id="503010100" type="act"/>
+                <act action_id="503010103" action_name="编辑" action_code="sys/session/detail#app_scene=edit" sort_order="3" parent_id="503010100" type="act"/>
+            </url>
+            <url action_id="503010200" action_name="增值服务列表" action_code="market/valueservice/do_list" sort_order="3" parent_id="503010000" type="url">
+                <act action_id="503010201" action_name="查看" action_code="market/valueservice/detail#app_scene=view" sort_order="1" parent_id="503010200" type="act"/>
+                <act action_id="503010202" action_name="新增" action_code="market/valueservice/detail#app_scene=add" sort_order="2" parent_id="503010200" type="act"/>
+                <act action_id="503010203" action_name="编辑" action_code="market/valueservice/detail#app_scene=edit" sort_order="3" parent_id="503010200" type="act"/>
+                <act action_id="503010204" action_name="启用" action_code="market/valueservice/set_active_enable" sort_order="4" parent_id="503010200" type="act"/>
+                <act action_id="503010205" action_name="停用" action_code="market/valueservice/set_active_disable" sort_order="5" parent_id="503010200" type="act"/>
+            </url>
+            <url action_id="503010300" action_name="增值服务类别" action_code="market/valueservice_cat/do_list" sort_order="2" parent_id="503010000" type="url">
+                <act action_id="503010301" action_name="查看" action_code="market/valueservice_cat/detail#app_scene=view" sort_order="1" parent_id="503010300" type="act"/>
+                <act action_id="503010302" action_name="新增" action_code="market/valueservice_cat/detail#app_scene=add" sort_order="2" parent_id="503010300" type="act"/>
+                <act action_id="503010303" action_name="编辑" action_code="market/valueservice_cat/detail#app_scene=edit" sort_order="3" parent_id="503010300" type="act"/>
+                <act action_id="503010304" action_name="启用" action_code="market/valueservice_cat/set_active_enable" sort_order="4" parent_id="503010300" type="act"/>
+                <act action_id="503010305" action_name="停用" action_code="market/valueservice_cat/set_active_disable" sort_order="5" parent_id="503010300" type="act"/>
+            </url>
+        </group>
+        <group action_id="503020000" action_name="产品信息" action_code="cpzx-cpxx" sort_order="2" parent_id="503000000" type="group">
+            <url action_id="503020100" action_name="产品档案" action_code="products/productinfo/do_list" sort_order="1" parent_id="503020000" type="url">
+                <act action_id="503020101" action_name="查看" action_code="products/productinfo/detail#scene=view" sort_order="1" parent_id="503020100" type="act"/>
+                <act action_id="503020102" action_name="新增" action_code="products/productinfo/detail#scene=add" sort_order="2" parent_id="503020100" type="act"/>
+                <act action_id="503020103" action_name="编辑" action_code="products/productinfo/detail#scene=edit" sort_order="3" parent_id="503020100" type="act"/>
+            </url>
+            <url action_id="503020200" action_name="产品功能树" action_code="" sort_order="2" parent_id="503020000" type="url">
+                
+            </url>
+            <url action_id="503020300" action_name="产品系统版本" action_code="products/productedition/do_list" sort_order="3" parent_id="503020000" type="url">
+                <act action_id="503020301" action_name="查看" action_code="products/productedition/detail#scene=view" sort_order="1" parent_id="503020300" type="act"/>
+                <act action_id="503020302" action_name="新增" action_code="products/productedition/detail#scene=add" sort_order="2" parent_id="503020300" type="act"/>
+                <act action_id="503020303" action_name="编辑" action_code="products/productedition/detail#scene=edit" sort_order="3" parent_id="503020300" type="act"/>
+            </url>
+            <url action_id="503020400" action_name="产品补丁" action_code="products/productpatch/do_list" sort_order="4" parent_id="503020000" type="url">
+            	 <act action_id="503020401" action_name="查看" action_code="products/productpatch/detail#scene=view" sort_order="1" parent_id="503020400" type="act"/>
+                <act action_id="503020402" action_name="新增" action_code="products/productpatch/detail#scene=add" sort_order="2" parent_id="503020400" type="act"/>
+                <act action_id="503020403" action_name="编辑" action_code="products/productpatch/detail#scene=edit" sort_order="3" parent_id="503020400" type="act"/>
+                
+            </url>
+        </group>
+        <group action_id="503030000" action_name="产品授权" action_code="cpzx-cpsq" sort_order="3" parent_id="503000000" type="group">
+            <url action_id="503030100" action_name="产品订购授权列表" action_code="products/productorderauth/do_list" sort_order="1" parent_id="503030000" type="url">
+                <act action_id="503030101" action_name="查看" action_code="products/productorderauth/detail#scene=view" sort_order="1" parent_id="503030100" type="act"/>
+                <act action_id="503030102" action_name="新增" action_code="products/productorderauth/detail#scene=add" sort_order="2" parent_id="503030100" type="act"/>
+                <act action_id="503030103" action_name="编辑" action_code="products/productorderauth/detail#scene=edit" sort_order="3" parent_id="503030100" type="act"/>
+            </url>
+            <url action_id="503030200" action_name="增值服务授权列表" action_code="products/valueorderauth/do_list" sort_order="2" parent_id="503030000" type="url">
+                <act action_id="503030201" action_name="查看" action_code="products/valueorderauth/detail#scene=view" sort_order="1" parent_id="503030200" type="act"/>
+            </url>
+        </group>
+        <group action_id="503040000" action_name="提单管理" action_code="cpzx-tdgl" sort_order="4" parent_id="503000000" type="group">
+            <url action_id="503040100" action_name="产品问题提单列表" action_code="" sort_order="1" parent_id="503040000" type="url">
+            </url>
+            <url action_id="503040200" action_name="产品需求提单列表" action_code="" sort_order="2" parent_id="503040000" type="url">
+                
+            </url>
+        </group>
+        <group action_id="503050000" action_name="统计分析" action_code="cpzx-tjfx" sort_order="5" parent_id="503000000" type="group">
+            <url action_id="503050100" action_name="版本应用分析" action_code="" sort_order="1" parent_id="503050000" type="url">
+                
+            </url>
+            <url action_id="503050200" action_name="补丁应用分析" action_code="" sort_order="2" parent_id="503050000" type="url">
+                
+            </url>
+        </group>
+        <group action_id="503060000" action_name="产品运营" action_code="cpzx-cpyy" sort_order="5" parent_id="503000000" type="group" appid="5">
+            <url action_id="503060100" action_name="产品RDS扩展管理" action_code="products/rdsextmanage/do_list" sort_order="1" parent_id="503060000" type="url" appid="5">
+                <act action_id="503060101" action_name="导入RDS" action_code="products/rdsextmanage/do_importrds_list" sort_order="1" parent_id="503060100" type="act"/>
+                <act action_id="503060102" action_name="一键生成数据库" action_code="products/rdsextmanage/do_batch_createdb#scene=edit" sort_order="2" parent_id="503060100" type="act"/>
+                <act action_id="503060103" action_name="批量生成数据库" action_code="products/rdsextmanage/do_batch_createdb#scene=add" sort_order="3" parent_id="503060100" type="act"/>
+                <act action_id="503060104" action_name="数据更新" action_code="" sort_order="4" parent_id="503060100" type="act"/>
+                <act action_id="503060105" action_name="数据库管理" action_code="products/rdsextmanage/do_rdsdb_list" sort_order="5" parent_id="503060100" type="act"/>
+            </url>
+            <url action_id="503060200" action_name="产品数据库扩展管理" action_code="products/dbextmanage/do_list" sort_order="2" parent_id="503060000" type="url" appid="5">
+                <act action_id="503060201" action_name="新增数据库" action_code="products/dbextmanage/show_add_dbextmanage" sort_order="1" parent_id="503060200" type="act"/>
+                <act action_id="503060202" action_name="删除" action_code="products/dbextmanage/do_del_nobind" sort_order="2" parent_id="503060200" type="act"/>
+                <act action_id="503060203" action_name="绑定" action_code="products/dbextmanage/bind_dbextmanage" sort_order="3" parent_id="503060200" type="act"/>
+            </url>
+            
+            <url action_id="503060300" action_name="产品主机管理" action_code="products/vmanage/do_list" sort_order="3" parent_id="503060000" type="url" appid="5">
+                <act action_id="503060301" action_name="导入VM主机" action_code="products/vmanage/do_importhost_list" sort_order="1" parent_id="503060300" type="act"/>
+                <act action_id="503060305" action_name="VM主机管理" action_code="products/vmanage/do_vm_list" sort_order="5" parent_id="503060300" type="act"/>
+            </url>
+            
+            <url action_id="503060400" action_name="产品主机明细管理" action_code="products/vhost_manage/do_list" sort_order="4" parent_id="503060000" type="url">
+                <act action_id="503060401" action_name="查看" action_code="products/vhost_manage/detail#scene=view" sort_order="1" parent_id="503060400" type="act"/>
+                <act action_id="503060402" action_name="新增" action_code="products/vhost_manage/detail#scene=add" sort_order="2" parent_id="503060400" type="act"/>
+                <act action_id="503060403" action_name="编辑" action_code="products/vhost_manage/detail#scene=edit" sort_order="3" parent_id="503060400" type="act"/>
+            </url>
+            
+            <url action_id="503060500" action_name="自动服务管理" action_code="products/autotask_manage/do_list" sort_order="5" parent_id="503060000" type="url">
+                <act action_id="503060501" action_name="查看" action_code="products/autotask_manage/detail#scene=view" sort_order="1" parent_id="503060500" type="act"/>
+                <act action_id="503060502" action_name="新增" action_code="products/autotask_manage/detail#scene=add" sort_order="2" parent_id="503060500" type="act"/>
+                <act action_id="503060503" action_name="编辑" action_code="products/autotask_manage/detail#scene=edit" sort_order="3" parent_id="503060500" type="act"/>
+            </url>
+            
+            
+            
+        </group>
+    </cote>
+    <cote action_id="504000000" action_name="客户中心" action_code="khzx" sort_order="4" parent_id="0" type="cote">
+        <group action_id="504010000" action_name="客户基础信息" action_code="khzx-khjcxx" sort_order="1" parent_id="504000000" type="group">
+            <url action_id="504010100" action_name="客户列表" action_code="clients/clientinfo/do_list" sort_order="1" parent_id="504010000" type="url">
+                <act action_id="504010101" action_name="查看" action_code="clients/clientinfo/detail#scene=view" sort_order="1" parent_id="504010100" type="act"/>
+                <act action_id="504010102" action_name="新增" action_code="clients/clientinfo/detail#scene=add" sort_order="2" parent_id="504010100" type="act"/>
+                <act action_id="504010103" action_name="编辑" action_code="clients/clientinfo/detail#scene=edit" sort_order="3" parent_id="504010100" type="act"/>
+                <act action_id="504010104" action_name="店铺查询" action_code="clients/clientinfo/shoplist" sort_order="4" parent_id="504010100" type="act"/>
+                <act action_id="504010105" action_name="云主机查询" action_code="clients/clientinfo/vmlist" sort_order="5" parent_id="504010100" type="act"/>
+                <act action_id="504010106" action_name="RDS查询" action_code="clients/clientinfo/rdslist" sort_order="6" parent_id="504010100" type="act"/>
+                <act action_id="504010107" action_name="订购查询" action_code="clients/clientinfo/orderlist" sort_order="7" parent_id="504010100" type="act"/>
+                <act action_id="504010108" action_name="授权查询" action_code="clients/clientinfo/authlist" sort_order="8" parent_id="504010100" type="act"/>
+                <act action_id="504010109" action_name="审核" action_code="clients/clientinfo/do_check_clients" sort_order="9" parent_id="504010100" type="act"/>
+            </url>
+        </group>
+        <group action_id="504020000" action_name="客户店铺档案" action_code="khzx-khdpda" sort_order="2" parent_id="504000000" type="group">
+            <url action_id="504020100" action_name="店铺列表" action_code="clients/shopinfo/do_list" sort_order="1" parent_id="504020000" type="url">
+                <act action_id="504020101" action_name="查看" action_code="clients/shopinfo/detail#scene=view" sort_order="1" parent_id="504020100" type="act"/>
+                <act action_id="504020102" action_name="新增" action_code="clients/shopinfo/detail#scene=add" sort_order="2" parent_id="504020100" type="act"/>
+                <act action_id="504020103" action_name="编辑" action_code="clients/shopinfo/detail#scene=edit" sort_order="3" parent_id="504020100" type="act"/>
+                <act action_id="504020104" action_name="推送绑定" action_code="clients/shopinfo/set_shop_databind" sort_order="4" parent_id="504020100" type="act"/>
+                <act action_id="504020105" action_name="取消绑定" action_code="clients/shopinfo/set_shop_nodatabind" sort_order="5" parent_id="504020100" type="act"/>
+            </url>
+            <url action_id="504020200" action_name="店铺授权列表" action_code="clients/shopwarrant/do_list" sort_order="1" parent_id="504020000" type="url" appid="5">
+                <act action_id="504020201" action_name="查看" action_code="clients/shopwarrant/detail#scene=view" sort_order="1" parent_id="504020200" type="act" appid="5"/>
+                <act action_id="504020202" action_name="新增" action_code="clients/shopwarrant/detail#scene=add" sort_order="2" parent_id="504020200" type="act" appid="5"/>
+                <act action_id="504020203" action_name="编辑" action_code="clients/shopwarrant/detail#scene=edit" sort_order="3" parent_id="504020200" type="act" appid="5"/>
+                <act action_id="504020204" action_name="推送" action_code="clients/shopwarrant/do_push" sort_order="4" parent_id="504020200" type="act" appid="5"/>
+      </url>
+        </group>
+        <group action_id="504030000" action_name="客户云服务档案" action_code="khzx-khyfwda" sort_order="3" parent_id="504000000" type="group">
+            <url action_id="504030100" action_name="客户云主机列表" action_code="clients/aliinfo/do_list" sort_order="1" parent_id="504030000" type="url">
+                <act action_id="504030101" action_name="查看" action_code="clients/aliinfo/detail#scene=view" sort_order="1" parent_id="504030100" type="act"/>
+                <act action_id="504030102" action_name="新增" action_code="clients/aliinfo/detail#scene=add" sort_order="2" parent_id="504030100" type="act"/>
+                <act action_id="504030103" action_name="编辑" action_code="clients/aliinfo/detail#scene=edit" sort_order="3" parent_id="504030100" type="act"/>
+                <act action_id="504030104" action_name="连接测试" action_code="clients/aliinfo/client_net_test" sort_order="4" parent_id="504030100" type="act"/>
+                <act action_id="504030105" action_name="查看密码" action_code="clients/aliinfo/viewpass" sort_order="5" parent_id="504030100" type="act"/>
+                <act action_id="504030106" action_name="修改密码" action_code="clients/aliinfo/change_pass#scene=edit" sort_order="6" parent_id="504030100" type="act"/>
+                <act action_id="504030107" action_name="智能密码重置" action_code="clients/aliinfo/do_reset_pass" sort_order="7" parent_id="504030100" type="act"/>
+                <act action_id="504030108" action_name="部署" action_code="clients/aliinfo/do_deployment" sort_order="8" parent_id="504030100" type="act"/>
+                <act action_id="504030109" action_name="强制密码重置" action_code="clients/aliinfo/forreset_pass#scene=edit" sort_order="9" parent_id="504030100" type="act"/>
+                <act action_id="504030110" action_name="启用" action_code="clients/aliinfo/set_active_enable" sort_order="10" parent_id="504030100" type="act"/>
+                <act action_id="504030111" action_name="停用" action_code="clients/aliinfo/set_active_disable" sort_order="11" parent_id="504030100" type="act"/>
+            </url>
+            <url action_id="504030200" action_name="客户云数据库列表" action_code="clients/alirds/do_list" sort_order="2" parent_id="504030000" type="url">
+                <act action_id="504030201" action_name="查看" action_code="" sort_order="1" parent_id="504030200" type="act"/>
+                <act action_id="504030202" action_name="新增" action_code="clients/alirds/detail#scene=add" sort_order="2" parent_id="504030200" type="act"/>
+                <act action_id="504030203" action_name="编辑" action_code="clients/alirds/detail#scene=edit" sort_order="3" parent_id="504030200" type="act"/>
+                <act action_id="504030204" action_name="连接测试" action_code="clients/alirds/do_rds_test" sort_order="4" parent_id="504030200" type="act"/>
+                <act action_id="504030205" action_name="查看密码" action_code="clients/alirds/viewpass" sort_order="5" parent_id="504030200" type="act"/>
+                <act action_id="504030206" action_name="修改密码" action_code="clients/alirds/change_pass#scene=edit" sort_order="6" parent_id="504030200" type="act"/>
+                <act action_id="504030207" action_name="强制密码重置" action_code="clients/alirds/forreset_pass#scene=edit" sort_order="7" parent_id="504030200" type="act"/>
+                <act action_id="504030208" action_name="启用" action_code="clients/alirds/set_active_enable" sort_order="8" parent_id="504030200" type="act"/>
+                <act action_id="504030209" action_name="停用" action_code="clients/alirds/set_active_disable" sort_order="9" parent_id="504030200" type="act"/>
+            </url>
+        </group>
+    </cote>
+    <cote action_id="505000000" action_name="营销中心" action_code="yxzx" sort_order="5" parent_id="0" type="cote">
+        <group action_id="505010000" action_name="基础数据" action_code="yxzx-jcsj" sort_order="1" parent_id="505000000" type="group">
+            <url action_id="505010100" action_name="营销策略类型" action_code="market/strategytype/do_list" sort_order="1" parent_id="505010000" type="url">
+                <act action_id="505010101" action_name="查看" action_code="market/strategytype/detail#scene=view" sort_order="1" parent_id="505010100" type="act"/>
+                <act action_id="505010102" action_name="新增" action_code="market/strategytype/detail#scene=add" sort_order="2" parent_id="505010100" type="act"/>
+                <act action_id="505010103" action_name="编辑" action_code="market/strategytype/detail#scene=edit" sort_order="3" parent_id="505010100" type="act"/>
+            </url>
+            <url action_id="505010200" action_name="报价模板设置" action_code="market/planprice/do_list" sort_order="1" parent_id="505010000" type="url">
+                <act action_id="505010201" action_name="查看" action_code="market/planprice/detail#scene=view" sort_order="1" parent_id="505010200" type="act"/>
+                <act action_id="505010202" action_name="新增" action_code="market/planprice/detail#scene=add" sort_order="2" parent_id="505010200" type="act"/>
+                <act action_id="505010203" action_name="编辑" action_code="market/planprice/detail#scene=edit" sort_order="3" parent_id="505010200" type="act"/>
+                <act action_id="505010204" action_name="启用" action_code="market/planprice/set_active_enable" sort_order="4" parent_id="505010200" type="act"/>
+                <act action_id="505010205" action_name="停用" action_code="market/planprice/set_active_disable" sort_order="5" parent_id="505010200" type="act"/>
+            </url>
+        </group>
+        <group action_id="505020000" action_name="产品订购管理" action_code="yxzx-cpdggl" sort_order="2" parent_id="505000000" type="group">
+            <url action_id="505020100" action_name="产品订购列表" action_code="market/productorder/do_list" sort_order="1" parent_id="505020000" type="url">
+                <act action_id="505020101" action_name="查看" action_code="market/productorder/detail#scene=view" sort_order="1" parent_id="505020100" type="act"/>
+                <act action_id="505020102" action_name="新增" action_code="market/productorder/detail#scene=add" sort_order="2" parent_id="505020100" type="act"/>
+                <act action_id="505020103" action_name="编辑" action_code="market/productorder/detail#scene=edit" sort_order="3" parent_id="505020100" type="act"/>
+                <act action_id="505020104" action_name="审核" action_code="market/productorder/do_check_orders" sort_order="4" parent_id="505020100" type="act"/>
+                <act action_id="505020105" action_name="付款" action_code="market/productorder/do_pay_orders" sort_order="5" parent_id="505020100" type="act"/>
+            </url>
+        </group>
+        <group action_id="505030000" action_name="产品增值服务订购管理" action_code="yxzx-cpzzfwdggl" sort_order="3" parent_id="505000000" type="group">
+            <url action_id="505020200" action_name="增值服务订购列表" action_code="market/valueorder/do_list" sort_order="1" parent_id="505020000" type="url">
+                <act action_id="505020201" action_name="查看" action_code="market/valueorder/detail#scene=view" sort_order="1" parent_id="505020200" type="act"/>
+                <act action_id="505020202" action_name="新增" action_code="market/valueorder/detail#scene=add" sort_order="2" parent_id="505020200" type="act"/>
+                <act action_id="505020203" action_name="编辑" action_code="market/valueorder/detail#scene=edit" sort_order="3" parent_id="505020200" type="act"/>
+                <act action_id="505020204" action_name="付款" action_code="market/valueorder/do_pay_value_orders" sort_order="4" parent_id="505020200" type="act"/>
+                <act action_id="505020205" action_name="审核" action_code="market/valueorder/do_check_value_orders" sort_order="5" parent_id="505020200" type="act"/>
+            </url>
+        </group>
+    </cote>
+    <cote action_id="506000000" action_name="服务中心" action_code="fwzx" sort_order="6" parent_id="0" type="cote">
+        <group action_id="506010000" action_name="基础数据" action_code="fwzx-jcsj" sort_order="1" parent_id="506000000" type="group">
+            <url action_id="506010100" action_name="客户KEY列表" action_code="clients/clientopenapi/do_list" sort_order="1" parent_id="506010000" type="url">
+                
+            </url>
+        </group>
+        <group action_id="506020000" action_name="提单管理" action_code="fwzx-tdgl" sort_order="2" parent_id="506000000" type="group">
+            <url action_id="506020100" action_name="产品问题提单列表" action_code="servicenter/productissue/do_list" sort_order="1" parent_id="506020000" type="url">
+            <act action_id="506020101" action_name="查看" action_code="servicenter/productissue/detail#scene=view" sort_order="1" parent_id="506020100" type="act"/>
+            <act action_id="506020102" action_name="新增" action_code="servicenter/productissue/detail#scene=add" sort_order="2" parent_id="506020100" type="act"/>
+            <act action_id="506020103" action_name="编辑" action_code="servicenter/productissue/detail#scene=edit" sort_order="3" parent_id="506020100" type="act"/>
+            <act action_id="506020104" action_name="受理" action_code="servicenter/productissue/do_issue_accept" sort_order="4" parent_id="506020100" type="act"/>
+            <act action_id="506020105" action_name="拒绝" action_code="servicenter/productissue/do_show_unable_deny" sort_order="5" parent_id="506020100" type="act"/>
+            <act action_id="506020106" action_name="已解决" action_code="servicenter/productissue/do_show_unable_pass" sort_order="6" parent_id="506020100" type="act"/>
+            <act action_id="506020107" action_name="无法解决" action_code="servicenter/productissue/do_show_unable" sort_order="7" parent_id="506020100" type="act"/>
+            <act action_id="506020108" action_name="研发介入" action_code="servicenter/productissue/do_show_research" sort_order="8" parent_id="506020100" type="act"/>             
+            <act action_id="506020109" action_name="强制编辑" action_code="servicenter/productissue/do_comedit" sort_order="9" parent_id="506020100" type="act"/> 
+            </url>
+            <url action_id="506020200" action_name="产品需求提单列表" action_code="servicenter/productxqissue/do_list" sort_order="2" parent_id="506020000" type="url">
+                <act action_id="506020201" action_name="查看" action_code="servicenter/productxqissue/detail#scene=view" sort_order="1" parent_id="506020200" type="act"/>
+                <act action_id="506020202" action_name="新增" action_code="servicenter/productxqissue/detail#scene=add" sort_order="2" parent_id="506020200" type="act"/>
+                <act action_id="506020203" action_name="编辑" action_code="servicenter/productxqissue/detail#scene=edit" sort_order="3" parent_id="506020200" type="act"/>
+                <act action_id="506020204" action_name="受理" action_code="servicenter/productxqissue/do_xqissue_accept" sort_order="4" parent_id="506020200" type="act"/>
+                <act action_id="506020205" action_name="拒绝" action_code="servicenter/productxqissue/do_show_unable_deny" sort_order="5" parent_id="506020200" type="act"/>
+                <act action_id="506020206" action_name="已解决" action_code="servicenter/productxqissue/do_show_unable_pass" sort_order="6" parent_id="506020200" type="act"/>
+                <act action_id="506020207" action_name="无法解决" action_code="servicenter/productxqissue/do_show_unable" sort_order="7" parent_id="506020200" type="act"/>
+                <act action_id="506020208" action_name="需求审批" action_code="servicenter/productxqissue/do_show_idea" sort_order="8" parent_id="506020200" type="act"/>  
+            </url>
+        </group>
+    </cote>
+</root>
