@@ -1,0 +1,62 @@
+.container{margin-left:0;margin-top:0;width:auto;padding:20px 20px 0 20px;}.detail-page,.form-page,.search-page{padding:0;}
+.page-title {display: block; float: left;  }
+.page-link {float: right; display: block; font-family: '微软雅黑'; FONT-SIZE: 15px; margin-right: 10px}
+.clear {clear: both;}
+hr {margin-top: 10px; margin-bottom: 10px}
+.remark {
+	/*margin-left: 20px;*/
+	color: gray;
+}
+.seperator {
+	font-weight: bold;
+	margin-left:20px;
+}
+.row {
+	padding: 1px;
+}
+
+.well{margin-bottom:5px;padding:0;min-height:40px;}
+body{font-size:0.8em;}
+input[type="text"],input[type="password"], textarea, select{padding:2px;}
+.bui-select .x-icon{height:24px;}
+.bui-select .x-icon{width:14px;}
+hr{margin-bottom:4px;margin-top:2px;}
+.button{padding:2px 12px;}
+.bui-select-list .bui-list-item{padding:1px 10px;}
+.bui-select-list ul{margin:4px 0px;}
+#btn-search{ border:none; width:90px; height:63px; background:url(../img/search_btn.png) no-repeat; font-size:25px; text-indent:18px;}
+
+#btn-search:hover,
+#btn-search:focus,
+#btn-search:active,
+#btn-search.active {
+  color: #ffffff;
+  background:url(../img/search_btn_hover.png) no-repeat;
+}
+
+#showbatch{
+    background:url(../images/batch.png) no-repeat;
+    float:right;
+    margin-right:5px;
+    cursor:pointer;
+    width:18px;
+    height:18px;
+}
+
+#shownobatch{
+    background:url(../images/nobatch.png) no-repeat;
+    float:right;
+    margin-right:5px;
+    cursor:pointer;
+    width:18px;
+    height:18px;
+}
+
+.go_back_btn{
+	background:#ff6600;
+	border:1px #ff0000 solid;
+}
+
+.go_back_btn:hover{
+	background:#ff6633;
+}

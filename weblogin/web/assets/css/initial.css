@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+/*reset*/
+body,div,p,h1,h2,h3,h4,h5,h6,a,ul,li,ol,span,img,input,marquee{ margin:0; padding:0;font-family: "Microsoft YaHei","微软雅黑","Arial","宋体","Times New Roman",Times,serif;}
+li{ list-style:none;}
+a{ text-decoration:none;}
+input,img{ border:none;}
+
+.page{ width:100%; height:100%; position:absolute; overflow:hidden;}
+.top{ width:100%; height:55px; background:url(../img/ui/efast365logo.png) no-repeat 1% center; border-bottom:5px solid #ec6d3a; overflow:hidden;}
+.top .news{ display:inline-block; width:25%; height:100%; background:url(../img/ui/news_icon.png) no-repeat left center; float:left; margin-left:20%; padding-left:50px; overflow:hidden;}
+.top .news a{ display:block; color:#ec6d3a; font-size:14px; height:55px; line-height:55px;}
+.top .widget{ float:right; height:100%;}
+.top .widget a img{ display:inline-block; padding-top:10px;}
+.top .widget .server{ display:inline-block; width:50px; height:100%; text-align:center; border-right:1px solid #d3d3d3; vertical-align:top; float:left;}
+.top .widget .server:hover{ background:#ec6d3a;}
+.top .widget .change_pwd{ display:inline-block; width:50px; height:100%; text-align:center; border-right:1px solid #d3d3d3; vertical-align:top; float:left;}
+.top .widget .change_pwd:hover{ background:#ec6d3a;}
+.top .widget .help{display:inline-block; width:50px; height:100%; text-align:center;border-right:1px solid #d3d3d3; vertical-align:top; float:left;}
+.top .widget .help:hover{ background:#ec6d3a;}
+.top .widget .change{ display:inline-block; width:50px; height:100%; text-align:center; border-right:1px solid #d3d3d3; vertical-align:top; float:left;}
+.top .widget .change:hover{ background:#ec6d3a;}
+.top .widget .welcome{ display:inline-block; width:100px; height:100%; text-align:right; line-height:26px; color:#7e7e7e; float:left;}
+.top .widget .welcome strong{ color:#ec6d3a;}
+.top .widget .exit{display:inline-block; width:50px; height:100%; text-align:center; vertical-align:top; float:left;}
+.left{ height:100%; float:left;}
+.top .widget .exit:hover{background:#ec6d3a;}
+.left .list{ width:113px; min-height:100%; background:#ec6d3a; }
+.left .list li{ height:90px; border-bottom:1px solid #be562f; text-align:center;}
+.left .list li a{ display:block; border-left:5px solid #ec6d3a; height:100%; text-indent:-8px; color:#FFF; background-repeat:no-repeat; background-position:33px 15px;}
+.left .list li a.a01{ background-image:url(../img/ui/list_icon01.png);}
+.left .list li a.a02{ background-image:url(../img/ui/list_icon02.png);}
+.left .list li a.a03{ background-image:url(../img/ui/list_icon03.png);}
+.left .list li a.a04{ background-image:url(../img/ui/list_icon04.png);}
+.left .list li a.a05{ background-image:url(../img/ui/list_icon05.png);}
+.left .list li a.a06{ background-image:url(../img/ui/list_icon06.png);}
+.left .list li a.a07{ background-image:url(../img/ui/list_icon07.png);}
+.left .list li a:hover,
+.left .list li a.ac{ background-color:#FFF; border-color:#be562f; color:#ec6d3a; background-position:33px -62px;}
+.left .list li a span{ position:relative; top:52px;}
+.left .box{ height:100%; background:#FFF; float:left; position:relative; width:900px; position:relative;}
+.left .box .contact{ width:360px; height:170px; padding-top:20px; background:#ec6d3a; position:absolute; top:0; right:0; z-index:20; display:none; -webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;}
+.left .box .contact a{ display:inline-block; width:74px; height:74px; border-radius:100%; background:#e15845; text-align:center; position:relative; margin:0 6px;}
+.left .box .contact a.qq img{width:44px; height:49px; position:absolute; top:12px; left:14px;}
+.left .box .contact a.ww img{width:46px; height:48px; position:absolute; top:12px; left:14px;}
+.left .box .contact a.qq:hover img{width:71px; height:78px; top:-18px; left:2px;}
+.left .box .contact a.ww:hover img{width:75px; height:75px; top:-12px; left:0px;}
+.left .box .contact .p_01{padding-top:10px;}
+.left .box .contact .p_01 span{ margin:0 9px; color:#FFF;}
+.left .box .contact .p_02{padding-top:20px; text-align:center;}
+.left .box .contact .p_02 img{ vertical-align:bottom;}
+.left .box .contact .p_02 span{ margin-left:5px; color:#FFF;}
+
+.left .box .pwd_contact{ width:360px; height:250px; background:#ec6d3a; position:absolute; top:0; right:0; z-index:20; display:none; -webkit-border-bottom-right-radius: 5px;-webkit-border-bottom-left-radius: 5px;-moz-border-radius-bottomright: 5px;-moz-border-radius-bottomleft: 5px;border-bottom-right-radius: 5px;border-bottom-left-radius: 5px;padding-left:10px;}
+.left .box .pwd_contact p{ padding-bottom: 5px;}
+.left .box .pwd_contact table{ border:1px #eee solid;width:97%}
+.left .box .pwd_contact td{ border:1px #eee solid;padding:5px;}
+.left .box .pwd_contact .note{ text-align:right}
+.left .box .pwd_contact td span{ color:yellow}
+.left .box .pwd_contact td input{width:200px}
+.left .box .pwd_contact .notice{text-align: center}
+.left .box .pwd_contact .sure{ padding:15px 0px;width:97%; text-align: center;}
+.left .box .pwd_contact .sure input{ width:70px;background-color:#f0ad4e;font-weight: bold;}

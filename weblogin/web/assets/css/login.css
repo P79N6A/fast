@@ -1,0 +1,28 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,img,input,p,a{ margin:0; padding:0; font-family:"微软雅黑",Arial, Helvetica, sans-serif}
+img,input{ border:none;}
+a{ text-decoration:none;}
+
+
+.page{ position:relative; margin-top:-20px;}
+.page .page_bg{ width:100%; min-width:1280px; min-height:768px;}
+.page .loader{ width:438px; height:520px; position:absolute; top:43%; left:50%; margin-left:-219px; margin-top:-260px; background:#FFF; border-radius:5px;}
+.page .loader_cont{ width:76%; margin:14% auto 0;}
+.page .loader_cont .efast_logo{ text-align:center; margin-bottom:50px;}
+.page .loader_cont .input_tt{ display:block; width:89%; height:30px; background-color:#e7e7e5; border-radius:6px; font-size:16px; color:#8b8d8e; padding:7px 5%; border:2px solid #FFF; line-height:30px;}
+.page .loader_cont .input_tt:focus{ border:2px solid #7ecaf1;}
+.page .loader_cont .prompt{ font-size:12px; color:#f03434; line-height:26px; visibility:hidden;}
+.page .loader_cont .btn{ display:block; width:100%; height:44px; border-radius:6px; font-size:22px; letter-spacing:30px; text-align:center; line-height:44px; background:#e95613; color:#FFF; text-indent:25px; margin-bottom:26px;}
+.page .loader_cont .btn:hover{ text-decoration:none;}
+.page .loader_cont .btn:focus{ text-decoration:none;}
+.page .loader_cont .option .remember{ float:left; color:#8b8d8e; font-size:14px; }
+.page .loader_cont .option .remember .remember_ck{ display:block; float:left; width:14px; height:13px; background:url(../images/check.jpg) no-repeat; margin-right:5px; margin-top:4px;}
+.page .loader_cont .option .remember .remember_cked{display:block; float:left; width:14px; height:13px; background:url(../images/checked.jpg) no-repeat; margin-right:5px; margin-top:4px;}
+.page .loader_cont .option .remember .remember_tt{ display:block; float:left; width:100px;}
+.page .loader_cont .option .forget{ float:right; color:#8b8d8e; font-size:14px;}
+
+
+
+
