@@ -1,0 +1,186 @@
+[2016-03-25 13:20:43] SELECT  *   FROM `osp`.`osp_kehu`  WHERE  `kh_code` = ? LIMIT 1
+Array
+(
+    [0] => admin
+)
+[2016-03-25 13:20:43] select HEX(AES_ENCRYPT(:pwd,:key)) LIMIT 1
+Array
+(
+    [:pwd] => 123admin
+    [:key] => 
+)
+[2016-03-25 13:22:47] select key_string from osp_keylock where key_startdate<=:startdate and key_enddate>=:enddate LIMIT 1
+Array
+(
+    [:startdate] => 2016-03-25
+    [:enddate] => 2016-03-25
+)
+[2016-03-25 13:22:47] select HEX(AES_ENCRYPT(:pwd,:key)) LIMIT 1
+Array
+(
+    [:pwd] => wangqian
+    [:key] => WJ4Z8VnrWkS+1TT0As3iHg==
+)
+[2016-03-25 13:22:47] SELECT  *   FROM `osp`.`osp_kehu`  WHERE  `kh_name` = ? LIMIT 1
+Array
+(
+    [0] => 宝塔科技
+)
+[2016-03-25 13:22:47] SELECT  *   FROM `osp`.`osp_kehu`  WHERE  `kh_code` = ? LIMIT 1
+Array
+(
+    [0] => wqian
+)
+[2016-03-25 13:22:47] SELECT  *   FROM `osp`.`osp_kehu`  WHERE  `kh_email` = ? LIMIT 1
+Array
+(
+    [0] => mhxsh@qq.com
+)
+[2016-03-25 13:22:47] SHOW COLUMNS FROM `osp`.`osp_kehu`
+Array
+(
+)
+[2016-03-25 13:22:47] INSERT INTO `osp`.`osp_kehu` (`kh_code`,`kh_name`,`kh_address`,`kh_tel`,`kh_email`,`kh_licence_num`,`kh_licence_img`,`kh_itphone`,`kh_itname`,`kh_account_type`,`kh_createdate`,`kh_createuser`,`kh_updateuser`,`kh_updatedate`,`kh_verify_status`,`kh_login_pwd`,`kh_place`) VALUES (:kh_code, :kh_name, :kh_address, :kh_tel, :kh_email, :kh_licence_num, :kh_licence_img, :kh_itphone, :kh_itname, :kh_account_type, :kh_createdate, :kh_createuser, :kh_updateuser, :kh_updatedate, :kh_verify_status, :kh_login_pwd, :kh_place)
+Array
+(
+    [:kh_code] => wqian
+    [:kh_name] => 宝塔科技
+    [:kh_address] => 
+    [:kh_tel] => 
+    [:kh_email] => mhxsh@qq.com
+    [:kh_licence_num] => 123123
+    [:kh_licence_img] => licenceimg/56f4cb162bfec.png
+    [:kh_itphone] => 13456677782
+    [:kh_itname] => 王迁
+    [:kh_account_type] => 0
+    [:kh_createdate] => 2016-03-25 13:22:47
+    [:kh_createuser] => 2
+    [:kh_updateuser] => 2
+    [:kh_updatedate] => 2016-03-25 13:22:47
+    [:kh_verify_status] => 0
+    [:kh_login_pwd] => D767AF1396D50F4E1D1E81A17E143DCB
+    [:kh_place] => 85
+)
+[2016-03-25 13:22:47] SELECT  *   FROM `osp`.`osp_kehu`  WHERE  `kh_code` = ? LIMIT 1
+Array
+(
+    [0] => wqian
+)
+[2016-03-25 13:22:47] select key_string from osp_keylock where key_startdate<=:startdate and key_enddate>=:enddate LIMIT 1
+Array
+(
+    [:startdate] => 2016-03-25
+    [:enddate] => 2016-03-25
+)
+[2016-03-25 13:22:47] select HEX(AES_ENCRYPT(:pwd,:key)) LIMIT 1
+Array
+(
+    [:pwd] => wangqian
+    [:key] => WJ4Z8VnrWkS+1TT0As3iHg==
+)
+[2016-03-25 13:22:47] select * from osp_kehu where kh_code=:kh_code and kh_login_pwd=:kh_login_pwd LIMIT 1
+Array
+(
+    [:kh_code] => wqian
+    [:kh_login_pwd] => D767AF1396D50F4E1D1E81A17E143DCB
+)
+[2016-03-25 13:22:56] SELECT  *   FROM `osp`.`osp_kehu`  WHERE  `kh_id` = ? LIMIT 1
+Array
+(
+    [0] => 2262
+)
+[2016-03-25 13:25:11] SELECT  *   FROM `osp`.`osp_kehu`  WHERE  `kh_id` = ? LIMIT 1
+Array
+(
+    [0] => 2262
+)
+[2016-03-25 13:25:15] select pro.pro_num, pro.pro_cp_id,pro.pro_product_version,pro.pro_real_price,pro.pro_hire_limit,pro.pro_dot_num,pro.pro_pay_status,pro.pro_check_status,pro.pro_orderdate,pro.pro_st_id,cp.cp_jc,cp.cp_name from osp_productorder pro LEFT JOIN osp_chanpin cp on cp.cp_id=pro.pro_cp_id where pro_kh_id=:pro_kh_id
+Array
+(
+    [:pro_kh_id] => 2262
+)
+[2016-03-25 13:25:17] select auth.pra_id,auth.pra_kh_id,auth.pra_cp_id,cp.cp_name,auth.pra_product_version,auth.pra_strategytype,auth.pra_authkey,auth.pra_authnum,auth.pra_shopnum,auth.pra_startdate,auth.pra_enddate,auth.pra_state from osp_productorder_auth auth LEFT JOIN osp_chanpin cp on cp.cp_id=auth.pra_cp_id where pra_kh_id=:pra_kh_id
+Array
+(
+    [:pra_kh_id] => 2262
+)
+[2016-03-25 13:25:20] select pro.pro_num, pro.pro_cp_id,pro.pro_product_version,pro.pro_real_price,pro.pro_hire_limit,pro.pro_dot_num,pro.pro_pay_status,pro.pro_check_status,pro.pro_orderdate,pro.pro_st_id,cp.cp_jc,cp.cp_name from osp_productorder pro LEFT JOIN osp_chanpin cp on cp.cp_id=pro.pro_cp_id where pro_kh_id=:pro_kh_id
+Array
+(
+    [:pro_kh_id] => 2262
+)
+[2016-03-25 13:25:23] select pro.pro_num, pro.pro_cp_id,pro.pro_product_version,pro.pro_real_price,pro.pro_hire_limit,pro.pro_dot_num,pro.pro_pay_status,pro.pro_check_status,pro.pro_orderdate,pro.pro_st_id,cp.cp_jc,cp.cp_name from osp_productorder pro LEFT JOIN osp_chanpin cp on cp.cp_id=pro.pro_cp_id where pro_kh_id=:pro_kh_id
+Array
+(
+    [:pro_kh_id] => 2262
+)
+[2016-03-25 13:25:26] select auth.pra_id,auth.pra_kh_id,auth.pra_cp_id,cp.cp_name,auth.pra_product_version,auth.pra_strategytype,auth.pra_authkey,auth.pra_authnum,auth.pra_shopnum,auth.pra_startdate,auth.pra_enddate,auth.pra_state from osp_productorder_auth auth LEFT JOIN osp_chanpin cp on cp.cp_id=auth.pra_cp_id where pra_kh_id=:pra_kh_id
+Array
+(
+    [:pra_kh_id] => 2262
+)
+[2016-03-25 13:25:31] select pro.pro_num, pro.pro_cp_id,pro.pro_product_version,pro.pro_real_price,pro.pro_hire_limit,pro.pro_dot_num,pro.pro_pay_status,pro.pro_check_status,pro.pro_orderdate,pro.pro_st_id,cp.cp_jc,cp.cp_name from osp_productorder pro LEFT JOIN osp_chanpin cp on cp.cp_id=pro.pro_cp_id where pro_kh_id=:pro_kh_id
+Array
+(
+    [:pro_kh_id] => 2262
+)
+[2016-03-25 13:25:33] select pro.pro_num, pro.pro_cp_id,pro.pro_product_version,pro.pro_real_price,pro.pro_hire_limit,pro.pro_dot_num,pro.pro_pay_status,pro.pro_check_status,pro.pro_orderdate,pro.pro_st_id,cp.cp_jc,cp.cp_name from osp_productorder pro LEFT JOIN osp_chanpin cp on cp.cp_id=pro.pro_cp_id where pro_kh_id=:pro_kh_id
+Array
+(
+    [:pro_kh_id] => 2262
+)
+[2016-03-25 13:25:39] SELECT  *   FROM `osp`.`osp_kehu`  WHERE  `kh_id` = ? LIMIT 1
+Array
+(
+    [0] => 2262
+)
+[2016-03-25 13:25:40] select pro.pro_num, pro.pro_cp_id,pro.pro_product_version,pro.pro_real_price,pro.pro_hire_limit,pro.pro_dot_num,pro.pro_pay_status,pro.pro_check_status,pro.pro_orderdate,pro.pro_st_id,cp.cp_jc,cp.cp_name from osp_productorder pro LEFT JOIN osp_chanpin cp on cp.cp_id=pro.pro_cp_id where pro_kh_id=:pro_kh_id
+Array
+(
+    [:pro_kh_id] => 2262
+)
+[2016-03-25 13:25:41] SELECT  *   FROM `osp`.`osp_kehu`  WHERE  `kh_id` = ? LIMIT 1
+Array
+(
+    [0] => 2262
+)
+[2016-03-25 13:25:45] select pro.pro_num, pro.pro_cp_id,pro.pro_product_version,pro.pro_real_price,pro.pro_hire_limit,pro.pro_dot_num,pro.pro_pay_status,pro.pro_check_status,pro.pro_orderdate,pro.pro_st_id,cp.cp_jc,cp.cp_name from osp_productorder pro LEFT JOIN osp_chanpin cp on cp.cp_id=pro.pro_cp_id where pro_kh_id=:pro_kh_id
+Array
+(
+    [:pro_kh_id] => 2262
+)
+[2016-03-25 13:25:55] select auth.pra_id,auth.pra_kh_id,auth.pra_cp_id,cp.cp_name,auth.pra_product_version,auth.pra_strategytype,auth.pra_authkey,auth.pra_authnum,auth.pra_shopnum,auth.pra_startdate,auth.pra_enddate,auth.pra_state from osp_productorder_auth auth LEFT JOIN osp_chanpin cp on cp.cp_id=auth.pra_cp_id where pra_kh_id=:pra_kh_id
+Array
+(
+    [:pra_kh_id] => 2262
+)
+[2016-03-25 13:25:57] select pro.pro_num, pro.pro_cp_id,pro.pro_product_version,pro.pro_real_price,pro.pro_hire_limit,pro.pro_dot_num,pro.pro_pay_status,pro.pro_check_status,pro.pro_orderdate,pro.pro_st_id,cp.cp_jc,cp.cp_name from osp_productorder pro LEFT JOIN osp_chanpin cp on cp.cp_id=pro.pro_cp_id where pro_kh_id=:pro_kh_id
+Array
+(
+    [:pro_kh_id] => 2262
+)
+[2016-03-25 13:26:03] SELECT kh_id,kh_verify_status FROM osp_kehu WHERE kh_code=:code  LIMIT 1
+Array
+(
+    [:code] => wqian
+)
+[2016-03-25 16:01:28] select auth.pra_id,auth.pra_kh_id,auth.pra_cp_id,cp.cp_name,auth.pra_product_version,auth.pra_strategytype,auth.pra_authkey,auth.pra_authnum,auth.pra_shopnum,auth.pra_startdate,auth.pra_enddate,auth.pra_state from osp_productorder_auth auth LEFT JOIN osp_chanpin cp on cp.cp_id=auth.pra_cp_id where pra_kh_id=:pra_kh_id
+Array
+(
+    [:pra_kh_id] => 2262
+)
+[2016-03-25 16:01:28] SELECT  *   FROM `osp`.`osp_kehu`  WHERE  `kh_id` = ? LIMIT 1
+Array
+(
+    [0] => 2262
+)
+[2016-03-25 16:01:28] select pro.pro_num, pro.pro_cp_id,pro.pro_product_version,pro.pro_real_price,pro.pro_hire_limit,pro.pro_dot_num,pro.pro_pay_status,pro.pro_check_status,pro.pro_orderdate,pro.pro_st_id,cp.cp_jc,cp.cp_name from osp_productorder pro LEFT JOIN osp_chanpin cp on cp.cp_id=pro.pro_cp_id where pro_kh_id=:pro_kh_id
+Array
+(
+    [:pro_kh_id] => 2262
+)
+[2016-03-25 16:01:29] SELECT  *   FROM `osp`.`osp_kehu`  WHERE  `kh_id` = ? LIMIT 1
+Array
+(
+    [0] => 2262
+)

@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+/* CSS Document */
+body { margin:0; padding:0; font-size:12px; font-family:"微软雅黑","Arial","宋体","Times New Roman",Times,serif; line-height:1.5;background: #81cfeb;overflow-y: hidden; }
+ul,dl,dd,h1,h2,h3,h4,h5,h6,form,p { padding:0; margin:0; font-family:"微软雅黑","Arial","宋体","Times New Roman",Times,serif; }
+ul { list-style:none;}
+img { border:0px;}
+a { color:#1c7bbe; text-decoration:none;}
+a:hover { color:#f00;}
+.f14{ font-size:14px;}
+.fgray{ color:#999999;}
+.clearfloat {clear:both;height:0;font-size: 1px;line-height: 0px;}
+
+/*login*/
+#login{ width:100%; text-align:center; height:640px; margin:auto auto; background:url(../img/loginbg2.jpg) top center no-repeat;}
+.login_top{ height:75px;  background:#f1f5f8; text-align:center;}
+.login_top div{width:960px; height:100%; text-align:left; display:inline-block; margin:0 auto; }
+.login_top img{ float: left; margin:20px; display:block;}
+.login_top p{ float:right;margin:75px 10px 5px 20px}
+.login_box{ width:980px; height:430px; display:inline-block; margin:81px auto; position:relative;}
+.login_con{ width:345px; float:right; display:block;color:#aaa;}
+.lab{ margin-bottom:22px;clear:both; text-align:center; }
+.lab_t{ display:block; text-align:center; font-weight:normal; height:50px; width:345px; text-align:center; line-height:50px; color:#666; font-size:13px; position:absolute; bottom:4px;}
+.login_b{ background:url(../img/login_b.jpg)  no-repeat; width:274px; height:46px; display:line-block; border:none;}
+.login_last{ display:block; height:60px;text-align:center; line-height:25px; margin-top:10px;}
+.text{border:0px solid rgb(255,255,255);width:200px;height:26px;}
+.pointer{cursor:pointer;}
+.lab_title{ margin:20px 0; text-align:center; font-size:21px; color:#666;}
+.text_bg{ display:inline-block; width:274px; height:46px;  background:url(../img/input_bg.png) top center no-repeat; text-align:center;}
+.text_bg input{ margin-top:13px;width:240px;z-index:1;height:20px;line-height:20px;background:white; border:none; -webkit-tap-highlight-color:rgba(255,0,0,0);outline:none;-moz-outline-style:none; font-size:14px; color:#focus;}
+.text_bg .input_hover{background:#fff;}
+.text_bg .input_out{background:transparent;}
+#capdiv .text_bg input{ width:170px;}
+#capdiv .text_bg img{ position:relative; right:-15px; top:-3px;}
+
+.lab_login{ margin-bottom:20px; text-align:center;}
+.lab_check{ text-align:left;}
+
+.lab .focus{background:url(../img/input-focus.png) top center no-repeat;}
+.s2{padding-left:32px; padding-top:10px; font-size:13px; color:#8b8d8e; font-size:16px; }
+.s2 input{ vertical-align:middle;}
+/*login the end*/

@@ -1,0 +1,211 @@
+<ReportSettings version="1.2">
+  <PageWidth>18.4</PageWidth>
+  <PageHeight>26</PageHeight>
+  <LeftMargin>1</LeftMargin>
+  <RightMargin>1</RightMargin>
+  <TopMargin>1.5</TopMargin>
+  <BottomMargin>1.5</BottomMargin>
+  <TableHeaderRepeat>true</TableHeaderRepeat>
+  <ShowPageNumber>true</ShowPageNumber>
+  <PageNumberFormat>【第{0}页 共{1}页】</PageNumberFormat>
+  <PageHeaderSettings>
+    <ItemSetting type="CaptionRowSetting">
+      <CaptionCellSettings>
+        <ItemSetting type="CaptionCellSetting">
+          <Value>=@主标题</Value>
+          <Width>16.2</Width>
+          <Style>
+            <TextAlign>center</TextAlign>
+            <FontSize>18</FontSize>
+            <FontBold>true</FontBold>
+          </Style>
+        </ItemSetting>
+      </CaptionCellSettings>
+    </ItemSetting>
+    <ItemSetting type="CaptionRowSetting">
+      <CaptionCellSettings>
+        <ItemSetting type="CaptionCellSetting">
+          <Value>单据编号：</Value>
+          <Width>2.4</Width>
+        </ItemSetting>
+        <ItemSetting type="CaptionCellSetting">
+          <Value>=@单据编号</Value>
+          <Width>5.2</Width>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+        <ItemSetting type="CaptionCellSetting">
+          <Value>经手人：</Value>
+          <Width>2.2</Width>
+        </ItemSetting>
+        <ItemSetting type="CaptionCellSetting">
+          <Value>=@经手人</Value>
+          <Width>3.8</Width>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+      </CaptionCellSettings>
+    </ItemSetting>
+    <ItemSetting type="CaptionRowSetting">
+      <CaptionCellSettings>
+        <ItemSetting type="CaptionCellSetting">
+          <Value>公司名称：</Value>
+          <Width>2.5</Width>
+        </ItemSetting>
+        <ItemSetting type="CaptionCellSetting">
+          <Value>=@公司名称</Value>
+          <Width>4.9</Width>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+        <ItemSetting type="CaptionCellSetting">
+          <Value>公司地址：</Value>
+          <Width>2.4</Width>
+        </ItemSetting>
+        <ItemSetting type="CaptionCellSetting">
+          <Value>=@公司地址</Value>
+          <Width>5.9</Width>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+      </CaptionCellSettings>
+    </ItemSetting>
+  </PageHeaderSettings>
+  <PageFooterSettings>
+    <ItemSetting type="CaptionRowSetting">
+      <CaptionCellSettings>
+        <ItemSetting type="CaptionCellSetting">
+          <Value>表尾：XXX公司</Value>
+          <Width>16.2</Width>
+          <Style>
+            <TextAlign>right</TextAlign>
+          </Style>
+        </ItemSetting>
+      </CaptionCellSettings>
+    </ItemSetting>
+  </PageFooterSettings>
+  <TableColumnSettings>
+    <ItemSetting type="TableColumnSetting">
+      <Width>3</Width>
+    </ItemSetting>
+    <ItemSetting type="TableColumnSetting">
+      <Width>3</Width>
+    </ItemSetting>
+    <ItemSetting type="TableColumnSetting">
+      <Width>3</Width>
+    </ItemSetting>
+    <ItemSetting type="TableColumnSetting">
+      <Width>3</Width>
+    </ItemSetting>
+    <ItemSetting type="TableColumnSetting">
+      <Width>3</Width>
+    </ItemSetting>
+  </TableColumnSettings>
+  <TableHeaderSettings>
+    <ItemSetting type="TableRowSetting">
+      <TableCellSettings>
+        <ItemSetting type="TableCellSetting">
+          <Value>ID</Value>
+          <Style>
+            <FontBold>true</FontBold>
+          </Style>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting">
+          <Value>名称</Value>
+          <Style>
+            <FontBold>true</FontBold>
+          </Style>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting">
+          <Value>数量</Value>
+          <Style>
+            <FontBold>true</FontBold>
+          </Style>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting">
+          <Value>金额</Value>
+          <Style>
+            <FontBold>true</FontBold>
+          </Style>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting">
+          <Value>日期</Value>
+          <Style>
+            <FontBold>true</FontBold>
+          </Style>
+        </ItemSetting>
+      </TableCellSettings>
+    </ItemSetting>
+  </TableHeaderSettings>
+  <TableDetailSettings>
+    <ItemSetting type="TableRowSetting">
+      <TableCellSettings>
+        <ItemSetting type="TableCellSetting">
+          <Value>=#ID</Value>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting">
+          <Value>=#名称</Value>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting">
+          <Value>=#数量</Value>
+          <Format>0.##</Format>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting">
+          <Value>=#金额</Value>
+          <Format>C2</Format>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting">
+          <Value>=#日期</Value>
+          <Format>yyyy-MM-dd</Format>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+      </TableCellSettings>
+    </ItemSetting>
+  </TableDetailSettings>
+  <TableFooterSettings>
+    <ItemSetting type="TableRowSetting">
+      <TableCellSettings>
+        <ItemSetting type="TableCellSetting">
+          <Value>合计：</Value>
+          <Style>
+            <FontBold>true</FontBold>
+          </Style>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting"/>
+        <ItemSetting type="TableCellSetting">
+          <Value>=SUM(#数量)</Value>
+          <Style>
+            <FontBold>true</FontBold>
+          </Style>
+          <Format>0.##</Format>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting">
+          <Value>=SUM(#金额)</Value>
+          <Style>
+            <FontBold>true</FontBold>
+          </Style>
+          <Format>C2</Format>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting"/>
+      </TableCellSettings>
+    </ItemSetting>
+    <ItemSetting type="TableRowSetting">
+      <TableCellSettings>
+        <ItemSetting type="TableCellSetting">
+          <Value>备注：</Value>
+          <ColSpan>5</ColSpan>
+          <PrintOutput>true</PrintOutput>
+        </ItemSetting>
+        <ItemSetting type="TableCellSetting"/>
+        <ItemSetting type="TableCellSetting"/>
+        <ItemSetting type="TableCellSetting"/>
+        <ItemSetting type="TableCellSetting"/>
+      </TableCellSettings>
+    </ItemSetting>
+  </TableFooterSettings>
+  <TableGroupSettings>
+    <ItemSetting type="TableGroupSetting"/>
+  </TableGroupSettings>
+</ReportSettings>

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>js与flash交互：嵌入MyReport插件示例</title>
+    <script type="text/javascript" src="swfobject.js"></script>
+    <script src="jquery-1.9.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //一下脚本用于动态创建swf节点
+        var swfVersionStr = "11.1.0";
+        var xiSwfUrlStr = "playerProductInstall.swf";
+        var flashvars = {};
+        var params = {};
+        params.quality = "high";
+        //params.bgcolor = "#ffffff";//去掉背景色
+        params.allowscriptaccess = "sameDomain";
+        params.allowScriptAccess = "always";
+        params.allowfullscreen = "true";
+        var attributes = {};
+        attributes.id = "MyReportTDDesignApp";
+        attributes.name = "MyReportTDDesignApp";
+        attributes.align = "middle";
+        swfobject.embedSWF("MyReportTDDesignApp.swf", "flashContent", "955px", "600px", swfVersionStr, xiSwfUrlStr, flashvars, params, attributes);
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            onPageLoad();
+        });
+
+        ////////////////////////////////////////////////////////////////////////////////
+        //
+        //  MyReport插件接口 v1.0
+        //  Copyright 蔡小汉(Hunk Cai)
+        //  All Rights Reserved.
+        //
+        ////////////////////////////////////////////////////////////////////////////////
+
+        var myReportAPI; //定义MyReport接口对象
+        var myReportInit = false; //定义MyReport初始化变量
+
+        //页面加载完成时调用
+        function onPageLoad() {
+            myReportAPI = document.getElementById("MyReportTDDesignApp");
+            loadReport1();
+        }
+
+        //自定义加载方法1
+        function loadReport1() {
+            if (!myReportInit)//要先判断插件是否初始化
+                return;
+
+            var url = "xml/ReportTDStyle_SFSY.xml"; //报表路径
+
+            //报表参数数据，这里为了测试方便使用了静态的数据，实际使用时应该向服务端动态请求数据。
+            var params = {};
+            //用中文名作为属性名称，便于设计时显示
+            params["寄件人客户编码"] = "";
+            params["寄件公司"] = "aaaaaaa有限公司";
+            params["寄件联络人"] = "张三三";
+            params["寄件地址"] = "广州xxx区xxxxx路xxx号xxxx";
+            params["寄件区号"] = "100000";
+            params["寄件联系电话"] = "18900000000";
+
+            params["收件人客户编码"] = "";
+            params["收件公司"] = "bbbbbbb有限公司";
+            params["收件联络人"] = "李四四";
+            params["收件地址"] = "深圳xxxxxxxxxx路xxx号xxxx";
+            params["收件区号"] = "200000";
+            params["收件联系电话"] = "13988888888";
+
+            params["托寄物内容"] = "文件";
+            params["托寄物数量"] = 1;
+
+            params["原寄地"] = "广州";
+            params["目的地"] = "深圳";
+
+            params["寄方付"] = "√";
+            params["收方付"] = "";
+
+            //只传一张单据数据
+
+            myReportLoad(url, [params], null);
+        }
+
+        /**
+        * 加载完成时调用，通知外部初始化加载已完成
+        * (flash to js：主动调用)
+        */
+        function onMyReportInitialized() {
+            myReportInit = true;
+            //以下是自定义代码
+            alert("MyReport初始化。");
+            loadReport1();
+        }
+
+        /**
+        * 关闭时调用，通知外部点击了关闭按钮
+        * (flash to js：主动调用)
+        */
+        function onMyReportClosed() {
+            //以下是自定义代码
+            alert("MyReport关闭。");
+        }
+
+        /**
+        * 打印时调用，通知外部执行了打印功能
+        * (flash to js：主动调用)
+        */
+        function onMyReportPrinted() {
+            //以下是自定义代码
+            //alert("MyReport打印。");
+        }
+
+        /**
+        * 保存时调用，通知外部执行了保存功能
+        * (flash to js：主动调用)
+        */
+        function onMyReportSave(xml) {
+            //以下是自定义代码
+            alert(xml);
+        }
+
+        /**
+        * 加载报表和数据
+        * (js to flash：被动调用，必须在onMyReportInitialized执行后调用)
+        * @param url: 报表格式路径
+        * @param paramList: 报表参数数据（多份数据），Array或者null
+        * @param tableList: 报表表格数据（多份数据），Array或者null
+        */
+        function myReportLoad(url, paramList, tableList) {
+            if (!myReportAPI || !myReportInit)
+                return;
+            myReportAPI.loadReport(url, paramList, tableList);
+        }
+    </script>
+</head>
+
+<body>
+<p style=" text-align:center">该示例演示在页面嵌入MyReport插件，使用js与flash插件进行交互</p>
+<div id="flashContent">
+    <p>
+        To view this page ensure that Adobe Flash Player version
+        11.1.0 or greater is installed.
+    </p>
+    <script type="text/javascript">
+        var pageHost = ((document.location.protocol == "https:") ? "https://" : "http://");
+        document.write("<a href='http://www.adobe.com/go/getflashplayer'><img src='"
+                + pageHost + "www.adobe.com/images/shared/download_buttons/get_flash_player.gif' alt='Get Adobe Flash player' /></a>" );
+    </script>
+</div>
+</body>
+</html>
