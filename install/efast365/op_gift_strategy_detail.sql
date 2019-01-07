@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS `op_gift_strategy_detail`;
+CREATE TABLE `op_gift_strategy_detail` (
+  `op_gift_strategy_detail_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `strategy_code` varchar(128) NOT NULL DEFAULT '' COMMENT '策略代码',
+  `type` tinyint(3) NOT NULL DEFAULT '0' COMMENT '策略类型0满送，1买送',
+  `money_min` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '最小满金额',
+  `money_max` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '满最大金额',
+  `is_contain_delivery_money` tinyint(3) NOT NULL DEFAULT '0' COMMENT '是否包含运费',
+  `lastchanged` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后修改时间',
+  `gift_num` int(11) NOT NULL DEFAULT '1' COMMENT '赠送数量',
+  `buy_num` int(11) NOT NULL DEFAULT '1' COMMENT '购买数量',
+  `give_way` tinyint(3) NOT NULL DEFAULT '0' COMMENT '赠送方式0固定送赠品，1随机送赠品',
+  `goods_condition` tinyint(3) NOT NULL DEFAULT '1' COMMENT '商品条件0固定商品条件，1随机商品条件2全场买送',
+  `is_mutex` tinyint(3) NOT NULL DEFAULT '0' COMMENT '0互斥，1互溶',
+  `is_fixed_customer` tinyint(3) NOT NULL DEFAULT '0' COMMENT '是否固定会员送',
+  `is_repeat` tinyint(3) DEFAULT '0' COMMENT '是否重复送',
+  `sort` varchar(10) DEFAULT NULL COMMENT '序号',
+  `name` varchar(255) DEFAULT NULL COMMENT '规则名称',
+  `level` tinyint(3) DEFAULT NULL COMMENT '优先级',
+  `time_type` tinyint(3) DEFAULT '0' COMMENT '时间维度 0:付款时间 1：下单时间',
+  `range_type` tinyint(3) DEFAULT '0' COMMENT '金额/活动商品范围设置0：手工 1：倍增',
+  `doubled` varchar(20) DEFAULT NULL COMMENT '倍增值',
+  `status` tinyint(3) DEFAULT '0' COMMENT '0：停用 1：启用',
+  `ranking_time_type` tinyint(3) DEFAULT '1' COMMENT '1:指定时间点 ;0: 循环整点',
+  `ranking_hour` varchar(50) DEFAULT '' COMMENT '存指定时间点时',
+  PRIMARY KEY (`op_gift_strategy_detail_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='赠品策略明细';

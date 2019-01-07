@@ -1,0 +1,18 @@
+schema-php-sdk 使用说明
+采用命名空间
+
+读取itemRule
+use Top\schema\factory\SchemaReader;
+$schemaReader = new SchemaReader();
+利用$schemaReader->readXmlForMap / $schemaReader->readXmlForList 解析schema xml数据，其中参数为xml文本数据
+
+同时$schemaReader->readXmlFileForMap / $schemaReader->readXmlFileForList 解析schema xml数据，参数问xml文件路径
+
+生成itemParam
+
+use Top\schema\factory\SchemaWriter;
+$schemaWriter = new SchemaWriter();
+$schemaWriter->writeParamXml生成itemParam xml文件数据
+
+$schemaWriter->writeRuleXml生成itemRule 规则xml文件数据
+

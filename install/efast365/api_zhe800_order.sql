@@ -1,0 +1,28 @@
+DROP TABLE IF EXISTS `api_zhe800_order`;
+CREATE TABLE `api_zhe800_order` (
+  `zhe800_order_id` int(11) NOT NULL AUTO_INCREMENT,
+  `order_id` varchar(30) NOT NULL DEFAULT '0' COMMENT '订单编号(兼容折800的字段）',
+  `id` varchar(30) NOT NULL DEFAULT '0' COMMENT 'zhe800商品id',
+  `count` int(11) NOT NULL DEFAULT '0' COMMENT '数量',
+  `name` varchar(100) NOT NULL DEFAULT '' COMMENT '商品标题',
+  `short_name` varchar(100) NOT NULL DEFAULT '0' COMMENT '商品简称',
+  `price` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '单价',
+  `goods_earning` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '实收⾦金额',
+  `num` int(11) NOT NULL DEFAULT '0' COMMENT '货号',
+  `seller_no` varchar(50) NOT NULL DEFAULT '0.00' COMMENT 'SKU商家编码',
+  `score` int(11) NOT NULL DEFAULT '0' COMMENT '赠送积分',
+  `postage` decimal(10,2) NOT NULL DEFAULT '0.00' COMMENT '邮费',
+  `shelf` varchar(50) NOT NULL DEFAULT '' COMMENT '货位',
+  `image` varchar(100) NOT NULL DEFAULT '' COMMENT '图片',
+  `url` varchar(100) NOT NULL DEFAULT '' COMMENT '商品-链接',
+  `sku_num` varchar(50) NOT NULL DEFAULT '' COMMENT '折800sku标⽰示',
+  `refund_id` int(11) NOT NULL DEFAULT '0' COMMENT '最近售后ID',
+  `refund_status` tinyint(1) NOT NULL DEFAULT '0' COMMENT '最近售后状态 为空说明不存在售后 1.等待卖家处理,2.买家已退货，等待卖家确认收货 3.同意退货，等待买家处理4.拒绝退款，等待买家处理 5.退款成功 6.售后关闭',
+  `refund_url` varchar(100) NOT NULL DEFAULT '' COMMENT '最近售后链接',
+  `complain_id` int(11) NOT NULL DEFAULT '0' COMMENT '最近维权ID',
+  `complain_status` int(255) NOT NULL DEFAULT '0' COMMENT '最近维权状态 为空说明不存在维权 1.等待折800处理 4.等待双方提交证据 5.客服给出了结方案，等待审核 6.了结方案被拒绝 97.方案执行中(退货退款还未退货的状态) 98.方案执行中 99.维权关闭',
+  `complain_url` varchar(0) NOT NULL DEFAULT '' COMMENT '最近维权链接',
+  `sku_id` varchar(30) NOT NULL,
+  PRIMARY KEY (`zhe800_order_id`),
+  UNIQUE KEY `order_id` (`order_id`,`sku_id`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

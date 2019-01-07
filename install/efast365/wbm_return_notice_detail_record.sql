@@ -1,0 +1,26 @@
+DROP TABLE IF EXISTS `wbm_return_notice_detail_record`;
+CREATE TABLE `wbm_return_notice_detail_record` (
+  `return_notice_record_detail_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `return_notice_record_id` int(11) DEFAULT '0',
+  `goods_id` int(11) DEFAULT '0' COMMENT 'goods_id',
+  `goods_code` varchar(64) DEFAULT '' COMMENT '商品代码',
+  `goods_name` varchar(255) DEFAULT '' COMMENT '商品名称',
+  `spec1_id` int(11) DEFAULT '0' COMMENT 'color_id',
+  `spec1_code` varchar(64) DEFAULT '' COMMENT '颜色代码',
+  `spec2_id` int(11) DEFAULT '0' COMMENT 'size_id',
+  `spec2_code` varchar(64) DEFAULT '' COMMENT '尺码代码',
+  `barcode` varchar(128) DEFAULT '' COMMENT '商品条形码',
+  `sku` varchar(128) DEFAULT '' COMMENT 'sku',
+  `trade_price` decimal(20,3) DEFAULT '0.000' COMMENT '批发价',
+  `sell_price` decimal(20,3) DEFAULT '0.000' COMMENT '标准售价',
+  `rebate` decimal(4,3) DEFAULT '1.000' COMMENT '折扣',
+  `price` decimal(20,3) DEFAULT '0.000' COMMENT '批发单价',
+  `num` int(11) DEFAULT '0' COMMENT '数量',
+  `money` decimal(20,3) DEFAULT '0.000' COMMENT '金额',
+  `finish_num` int(11) DEFAULT '0' COMMENT '完成数量',
+  `add_time` datetime DEFAULT NULL COMMENT '添加时间',
+  `lastchanged` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后修改时间',
+  `return_notice_code` varchar(128) DEFAULT NULL COMMENT '单据编号',
+  PRIMARY KEY (`return_notice_record_detail_id`),
+  UNIQUE KEY `return_notice_code_barcode` (`return_notice_code`,`barcode`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT='批发退货通知单明细表';

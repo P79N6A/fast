@@ -1,0 +1,21 @@
+
+INSERT INTO `op_express_by_buyer_remark` VALUES ('1', 'STO', '申通快递，申通，STO');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('2', 'ZTO', '中通快递，中通，ZTO');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('3', 'YTO', '圆通速递，圆通，YTO');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('4', 'SF', '顺丰速运，顺丰，SF');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('5', 'YUNDA', '韵达快递，韵达，YUNDA');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('6', 'TTKDEX', '天天快递，天天');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('7', 'EMS', 'EMS');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('8', 'EYB', 'EMS经济快递，EYB');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('9', 'POST', '中国邮政，邮政，POST');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('10', 'ZJS', '宅急送，ZJS');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('11', 'BEST', '百世汇通，汇通，百世');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('12', 'QFKD', '全峰快递，全峰');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('13', 'FEDEX', '联邦快递，联邦');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('14', 'GTO', '国通快递，国通');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('15', 'CRE', '中铁快运，中铁');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('16', 'FAST', '快捷快递，快捷');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('17', 'XB', '新邦物流，新邦');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('18', 'QRT', '增益速递，增益');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('19', 'UAPEX', '全一快递，全一');
+INSERT INTO `op_express_by_buyer_remark` VALUES ('20', 'UC', '优速快递，优速');

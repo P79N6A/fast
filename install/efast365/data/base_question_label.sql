@@ -1,0 +1,13 @@
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('BUYER_REMARK','有买家留言',1,1,'订单转单时，有买家留言',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('SELLER_REMARK','有商家留言',1,1,'订单转单时，有商家留言',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('CUSTOMER_IN_BLACKLIST','黑名单会员订单',1,1,'订单转单时，买家昵称，在黑名单会员列表里',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('INVOICE_TRADE','要开票订单',1,1,'订单转单时，有发票信息',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('FOREIGN_TRADE','国外订单',1,1,'订单转单时，买家收货地址，在国外',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('HK/MACAO/Taiwan_TRADE','香港、澳门、台湾订单',1,1,'订单转单时，买家收货地址，在香港、澳门、台湾',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('REFUND','买家申请退款退货',1,1,'订单A在未发货前，平台退单列表有订单A的退单，系统将自动设问订单A',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('STOREHOUSE_CANCEL','仓库取消',1,1,'仓库人员，在配发货环节，波次单中取消了订单A。订单A将自动设问',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('CHANGE_GOODS_MAKEUP','换货产生补差',1,1,'生成换货单导致订单已付款 小于 应付款，需再付款。系统将自动设为问题单',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('EXPRESS_CHECK','快递地址不可达到',0,1,'通过快递公司接口匹配发货地址是否可达，需要配置快递公司参数，目前支持韵达',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('CHANGE_TRADE_JD','京东换货订单',1,1,'京东平台转单，识别到换货单，订单将自动设问',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('WMS_SHORT_ORDER','第三方WMS缺货',1,1,'对接第三方仓储、若仓库反馈订单实物缺货，订单将自动设问',now());
+INSERT INTO `base_question_label` (`question_label_code`, `question_label_name`, `is_active`, `is_sys`, `remark`, `lastchanged`) VALUES('EXCEPTION_ADDRESS','异常地址',0,1,'平台订单转单时，买家收货地址不全或者包含特殊字符，订单将自动设问',now());

@@ -1,0 +1,32 @@
+
+DROP TABLE IF EXISTS `oms_sell_record_lof`;
+CREATE TABLE `oms_sell_record_lof` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `pid` int(11) NOT NULL DEFAULT '0' COMMENT '交易ID',
+  `p_detail_id` int(11) NOT NULL DEFAULT '0' COMMENT '明显单据号',
+  `record_type` tinyint(11) NOT NULL DEFAULT '1' COMMENT '单据类型 1订单 2退货单 3换货单 ',
+  `record_code` varchar(20) NOT NULL DEFAULT '' COMMENT '订单编号',
+  `deal_code` varchar(20) NOT NULL COMMENT '交易号',
+  `goods_id` int(11) NOT NULL DEFAULT '0' COMMENT '商品ID',
+  `goods_code` varchar(20) NOT NULL DEFAULT '' COMMENT '商品编码',
+  `spec1_id` int(11) NOT NULL DEFAULT '0' COMMENT '规格1id',
+  `spec1_code` varchar(20) NOT NULL DEFAULT '' COMMENT '规格编码',
+  `spec2_id` int(11) NOT NULL DEFAULT '0' COMMENT '规格2id',
+  `spec2_code` varchar(20) NOT NULL DEFAULT '' COMMENT '规格2编码',
+  `sku` varchar(128) NOT NULL DEFAULT '' COMMENT '商品编码',
+  `store_id` int(11) NOT NULL DEFAULT '0' COMMENT '仓库id',
+  `store_code` varchar(20) NOT NULL DEFAULT '' COMMENT '仓库代码',
+  `lof_no` varchar(20) NOT NULL DEFAULT '' COMMENT '批次号',
+  `production_date` date NOT NULL COMMENT '生产日期',
+  `num` int(11) NOT NULL DEFAULT '0' COMMENT '库存数量',
+  `occupy_type` tinyint(3) NOT NULL DEFAULT '1' COMMENT '1实物锁定，2实物扣减，3实物增加，0无效库存',
+   `order_date` date DEFAULT '0000-00-00' COMMENT '业务时间',
+  `create_time` int(11) NOT NULL DEFAULT '0' COMMENT '创建时间',
+  `lastchanged` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后修改时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `_index_key` (`record_code`,`record_type`,`sku`,`lof_no`),
+  KEY `occupy_type_index` (`occupy_type`) USING BTREE,
+  KEY `lastchanged` (`lastchanged`) USING BTREE,
+  KEY `ix_order_date` (`order_date`) USING BTREE,
+  KEY `ix_store_code` (`store_code`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='b2c库位表';

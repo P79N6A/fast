@@ -1,0 +1,26 @@
+DROP TABLE IF EXISTS report_base_order_collect;
+CREATE TABLE `report_base_order_collect` (
+  `kh_id` int(11) DEFAULT '0' COMMENT '客户ID',
+  `biz_date` varchar(10) DEFAULT NULL COMMENT '业务日期',
+  `sale_channel_code` varchar(30) DEFAULT NULL COMMENT '销售平台来源',
+  `sale_channel_name` varchar(30) DEFAULT NULL COMMENT '销售平台名称',
+  `shop_code` varchar(50) DEFAULT NULL COMMENT '店铺代码',
+  `shop_name` varchar(50) DEFAULT NULL COMMENT '店铺名称',
+  `order_sale_count` int(11) DEFAULT '0' COMMENT '订单成交笔数',
+  `order_sale_money` varchar(50) DEFAULT '0' COMMENT '订单成交金额',
+  `order_sale_express_money` varchar(50) DEFAULT '0' COMMENT '运费金额',
+  `goods_sale_count` int(11) DEFAULT '0' COMMENT '商品成交数量',
+  `refund_apply_count` int(11) DEFAULT '0' COMMENT '退单申请笔数',
+  `refund_apply_money` varchar(50) DEFAULT '0' COMMENT '退单申请退款金额',
+  `order_shipping_count` int(11) DEFAULT '0' COMMENT '发货订单笔数',
+  `order_shipping_money` varchar(50) DEFAULT '0' COMMENT '发货订单金额',
+  `order_shipping_goods_count` varchar(50) DEFAULT '0' COMMENT '发货商品数量',
+  `refund_return_goods_order_count` int(11) DEFAULT '0' COMMENT '已收货退单笔数',
+  `refund_return_goods_count` int(11) DEFAULT '0' COMMENT '已收货退单商品数',
+  `refund_actual_money` varchar(50) DEFAULT '0' COMMENT '退款金额',
+  `order_un_shipping_count` int(11) DEFAULT '0' COMMENT '未发货订单笔数',
+  `order_un_shipping_money` varchar(50) DEFAULT '0' COMMENT '未发货订单金额',
+  `order_un_shipping_goods_count` int(11) DEFAULT '0' COMMENT '未发货商品数量',
+  `modified` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '未发货商品数量',
+  UNIQUE KEY `kh_id_biz_date_shop_code` (`kh_id`,`biz_date`,`shop_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

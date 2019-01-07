@@ -1,0 +1,9 @@
+INSERT INTO `base_return_reason` VALUES ('2', 'TH002', '退运费', '1', '1', '0', '系统内置', '2014-12-04 09:55:34');
+INSERT INTO `base_return_reason` VALUES ('3', 'TH003', '收到商品破损', '1', '1', '0', '系统内置', '2014-12-04 09:55:34');
+INSERT INTO `base_return_reason` VALUES ('4', 'TH004', '商品错发/漏发', '1', '1', '0', '系统内置', '2014-12-04 09:55:34');
+INSERT INTO `base_return_reason` VALUES ('5', 'TH005', '商品需要维修', '1', '1', '0', '系统内置', '2014-12-04 09:55:34');
+INSERT INTO `base_return_reason` VALUES ('6', 'TH006', '发票问题', '1', '1', '0', '系统内置', '2014-12-04 09:55:34');
+INSERT INTO `base_return_reason` VALUES ('7', 'TH007', '收到商品与描述不符', '1', '1', '0', '系统内置', '2014-12-04 09:55:34');
+INSERT INTO `base_return_reason` VALUES ('8', 'TH008', '商品质量问题', '1', '1', '0', '系统内置', '2014-12-04 09:55:34');
+INSERT INTO `base_return_reason` VALUES ('9', 'TH009', '未按约定时间发货', '1', '1', '0', '系统内置', '2014-12-04 09:55:34');
+INSERT INTO `base_return_reason` VALUES ('10', 'TH010', '收到假货', '1', '1', '0', '系统内置', '2014-12-04 09:55:34');

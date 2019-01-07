@@ -1,0 +1,27 @@
+DROP TABLE IF EXISTS `api_taobao_fx_refund`;
+CREATE TABLE `api_taobao_fx_refund` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT 'taobao_refunds_trade的主键,自增',
+  `shop_code` varchar(100) NOT NULL COMMENT '商店code',
+  `purchase_order_id` varchar(50) NOT NULL COMMENT '主采购单id',
+  `sub_order_id` varchar(50) NOT NULL COMMENT '退款子单的id',
+  `refund_create_time` datetime DEFAULT NULL COMMENT '退款创建时间',
+  `modified` datetime DEFAULT NULL COMMENT '退款修改时间',
+  `is_return_goods` tinyint(1) DEFAULT NULL COMMENT '是否退货',
+  `refund_status` tinyint(2) DEFAULT NULL,
+  `refund_fee` varchar(30) DEFAULT NULL COMMENT '退款的金额',
+  `pay_sup_fee` varchar(30) DEFAULT NULL COMMENT '支付给供应商的金额',
+  `refund_reason` varchar(255) DEFAULT NULL COMMENT '退款原因',
+  `refund_desc` varchar(255) DEFAULT NULL COMMENT '退款说明',
+  `supplier_nick` varchar(255) DEFAULT NULL COMMENT '供应商nick',
+  `distributor_nick` varchar(255) DEFAULT NULL COMMENT '分销商nick',
+    `refund_record_code` varchar(30) NOT NULL DEFAULT '' COMMENT '业务系统单据编号(售后服务单号)',
+  `change_remark` varchar(200) DEFAULT '' COMMENT '转单日志',
+  `is_change` tinyint(1) DEFAULT '0' COMMENT '0：未转单 1：已转单',
+    `insert_time` datetime DEFAULT NULL COMMENT '系统下载退单时间',
+  `updated_time` datetime DEFAULT NULL COMMENT '系统更新退单时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `sub_order_id` (`sub_order_id`),
+  KEY `purchase_order_id` (`purchase_order_id`),
+  KEY `shop_code` (`shop_code`) USING BTREE,
+  KEY `refund_create_time` (`refund_create_time`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 ;

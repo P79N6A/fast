@@ -1,0 +1,15 @@
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('1', 'shunfeng', '顺丰速运', null, 'SF');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('2', 'yunda', '韵达快运', null, 'YUNDA');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('3', 'yuantong', '圆通速递', null, 'YTO');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('4', 'shentong', '申通快递', null, 'STO');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('5', 'zhongtong', '中通速递', null, 'ZTO');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('6', 'tiantian', '天天快递', null, 'TTKDEX');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('7', 'huitongkuaidi', '汇通快运', null, 'HTKY');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('8', 'ems', 'EMS', null, 'EMS');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('9', 'emsguoji', 'EMS国际', null, 'EMS');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('10', 'youzhengguonei', '邮政包裹', null, 'POSTB');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('11', 'youshuwuliu', '优速快递', null, 'UC');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('12', 'guotongkuaidi', '国通快递', null, 'GTO');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('13', 'quanfengkuaidi', '全峰快递', null, 'QFKD');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('14', 'zhaijisong', '宅急送', null, 'ZJS');
+INSERT INTO `api_mogujie_logistics_companies` VALUES ('15', 'kuaijiesudi', '快捷速递', null, 'FAST');

@@ -1,0 +1,26 @@
+DROP TABLE IF EXISTS `api_taobao_fx_product_sku`;
+CREATE TABLE `api_taobao_fx_product_sku` (
+  `api_taobao_fx_product_sku_id` int(11) unsigned AUTO_INCREMENT,
+  `shop_code` varchar(50) DEFAULT '' COMMENT '店铺nick',
+  `pid` varchar(50) DEFAULT '' COMMENT '关联的产品ID',
+  `name` varchar(50) DEFAULT '' COMMENT '名称',
+  `outer_id` varchar(50) DEFAULT '' COMMENT '商家编码',
+  `standard_price` varchar(50) DEFAULT '' COMMENT '市场价',
+  `id` varchar(50) DEFAULT '' COMMENT 'SkuID',
+  `quantity` varchar(50) DEFAULT '' COMMENT '库存',
+  `properties` text DEFAULT '' COMMENT 'sku的销售属性组合字符串。格式:pid:vid;pid:vid,如:1627207:3232483;1630696:3284570,表示:机身颜色:军绿色;手机套餐:一电一充。',
+  `cost_price` varchar(50) DEFAULT '' COMMENT '代销采购价，单位：元',
+  `dealer_cost_price` varchar(50) DEFAULT '' COMMENT '经销采购价',
+  `scitem_id` varchar(50) DEFAULT '' COMMENT '关联的后端商品id',
+  `reserved_quantity` varchar(50) DEFAULT '' COMMENT '预扣库存',
+  `quota_quantity` varchar(50) DEFAULT '' COMMENT '配额可用库存',
+  `is_allow_sync_inv` tinyint(3) DEFAULT '0' COMMENT '1:允许 0：不允许',
+  `inv_up_time` datetime DEFAULT NULL COMMENT '向第三方平台库存上传时间',
+  `inv_num` int(8) DEFAULT '-1' COMMENT '业务系统库存数量',
+  `inv_update_time` datetime DEFAULT NULL COMMENT '业务系统向本表更新库存时间',
+  `sys_update_time` datetime DEFAULT '0000-00-00 00:00:00' COMMENT '业务库存变化时间',
+  PRIMARY KEY (`api_taobao_fx_product_sku_id`),
+  unique KEY(`pid`, `id`),
+  KEY(`outer_id`),
+  KEY(`shop_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT '淘宝分销产品SKU原始数据';

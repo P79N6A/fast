@@ -1,0 +1,33 @@
+
+DROP TABLE IF EXISTS `goods_price`;
+CREATE TABLE `goods_price` (
+  `goods_price_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `price_type` int(4) DEFAULT '3' COMMENT '价格类型 0-商品 1-商品颜色 2-商品尺码 3-商品颜色尺码',
+  `goods_id` int(11) DEFAULT '0' COMMENT 'goods_id',
+  `goods_code` varchar(64) DEFAULT '' COMMENT '商品代码',
+  `color_id` int(11) DEFAULT '0' COMMENT 'color_id',
+  `color_code` varchar(64) DEFAULT '' COMMENT '颜色代码',
+  `size_id` int(11) DEFAULT '0' COMMENT 'size_id',
+  `size_code` varchar(64) DEFAULT '' COMMENT '尺码代码',
+  `sku` varchar(128) DEFAULT '' COMMENT 'sku',
+  `cost_price` decimal(20,3) DEFAULT '0.000' COMMENT '成本价',
+  `sell_price` decimal(20,3) DEFAULT '0.000' COMMENT '标准售价',
+  `sell_price1` decimal(20,3) DEFAULT '0.000' COMMENT '售价1',
+  `sell_price2` decimal(20,3) DEFAULT '0.000' COMMENT '售价2',
+  `sell_price3` decimal(20,3) DEFAULT '0.000' COMMENT '售价3',
+  `sell_price4` decimal(20,3) DEFAULT '0.000' COMMENT '售价4',
+  `sell_price5` decimal(20,3) DEFAULT '0.000' COMMENT '售价5',
+  `sell_price6` decimal(20,3) DEFAULT '0.000' COMMENT '售价6',
+  `buy_price` decimal(20,3) DEFAULT '0.000' COMMENT '标准进价',
+  `buy_price1` decimal(20,3) DEFAULT '0.000' COMMENT '进价1',
+  `buy_price2` decimal(20,3) DEFAULT '0.000' COMMENT '进价2',
+  `buy_price3` decimal(20,3) DEFAULT '0.000' COMMENT '进价3',
+  `trade_price` decimal(20,3) DEFAULT '0.000'  COMMENT '批发价',
+  `purchase_price` decimal(20,3) DEFAULT '0.000' COMMENT '进货价',
+  `lastchanged` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后修改时间',
+  `trd_id` varchar(64) DEFAULT '' COMMENT '第三方来源GUID',
+  `trd_type` varchar(32) DEFAULT '' COMMENT '第三方来源类型:erp/3000/efast',
+  `trd_time` varchar(64) DEFAULT '' COMMENT '第三方导入或者更新的时间',
+  PRIMARY KEY (`goods_price_id`),
+  UNIQUE KEY `goods_code` (`goods_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='商品价格';

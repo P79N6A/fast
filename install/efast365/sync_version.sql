@@ -1,0 +1,8 @@
+
+DROP TABLE IF EXISTS `sync_version`;
+CREATE TABLE `sync_version` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `version` varchar(50) NOT NULL COMMENT '补丁版本日期',
+  `synctime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;

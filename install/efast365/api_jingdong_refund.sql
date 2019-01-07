@@ -1,0 +1,41 @@
+-- ----------------------------
+-- Table structure for api_jingdong_refund
+-- ----------------------------
+DROP TABLE IF EXISTS `api_jingdong_refund`;
+CREATE TABLE `api_jingdong_refund` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `shop_code` varchar(50) NOT NULL COMMENT '店铺代码',
+  `type` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0:退货单,1退款单',
+  `afsServiceId` varchar(50) DEFAULT NULL COMMENT '服务单号',
+  `afsCategoryId` varchar(50) DEFAULT NULL COMMENT '分类id',
+  `afsApplyId` varchar(50) DEFAULT NULL COMMENT '申请单号',
+  `orderId` varchar(50) DEFAULT NULL COMMENT '订单号',
+  `orderRemark` varchar(50) DEFAULT NULL COMMENT '订单备注',
+  `wareId` varchar(50) DEFAULT NULL COMMENT '商品编号',
+  `wareName` varchar(50) DEFAULT NULL COMMENT '商品名称',
+  `pickwareProvince` varchar(50) DEFAULT NULL COMMENT '取件省',
+  `pickwareCity` varchar(50) DEFAULT NULL COMMENT '取件市',
+  `pickwareCounty` varchar(50) DEFAULT NULL COMMENT '取件县',
+  `pickwareVillage` varchar(50) DEFAULT NULL COMMENT '取件村',
+  `pickwareAddress` varchar(50) DEFAULT NULL COMMENT '取件地址',
+  `returnwareProvince` varchar(50) DEFAULT NULL COMMENT '返件省',
+  `returnwareCity` varchar(50) DEFAULT NULL COMMENT '返件市',
+  `returnwareCounty` varchar(50) DEFAULT NULL COMMENT '返件县',
+  `returnwareVillage` varchar(50) DEFAULT NULL COMMENT '返件村',
+  `returnwareAddress` varchar(255) DEFAULT NULL COMMENT '返件地址',
+  `customerExpect` varchar(50) DEFAULT NULL COMMENT '客户期望:10(退货)20(换货)30(维修)',
+  `questionDesc` varchar(50) DEFAULT NULL COMMENT '问题描述',
+  `customerName` varchar(50) DEFAULT NULL COMMENT '客户姓名',
+  `customerMobilePhone` varchar(50) DEFAULT NULL COMMENT '联系电话',
+  `customerEmail` varchar(50) DEFAULT NULL COMMENT '客户邮箱',
+  `approveName` varchar(50) DEFAULT NULL COMMENT '审核人',
+  `afsApplyTime` varchar(50) DEFAULT NULL COMMENT '申请时间',
+  `approvedDate` varchar(50) DEFAULT NULL COMMENT '审核时间',
+  `processedDate` varchar(50) DEFAULT NULL COMMENT '处理时间',
+  `receiveDate` varchar(50) DEFAULT NULL COMMENT '收货时间',
+  `createName` varchar(50) DEFAULT NULL COMMENT '创建人',
+  `createDate` varchar(50) DEFAULT NULL COMMENT '创建时间',
+  `lastchanged` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '数据变更时间戳',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `afsServiceId` (`afsServiceId`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COMMENT '京东退款退货单原始数据';

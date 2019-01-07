@@ -1,0 +1,43 @@
+-- ----------------------------
+-- Records of api_zhe800_logistics_companies
+-- ----------------------------
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('1', '1', '圆通速递', '', 'YTO');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('2', '2', '韵达快运', '', 'YUNDA');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('3', '3', '申通快递', '', 'STO');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('4', '4', '中通快递', '', 'ZTO');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('5', '6', '全峰快递', '', 'QFKD');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('6', '10', '百世汇通', '', 'HTKY');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('7', '12', '顺丰速运', '', 'SF');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('8', '14', '宅急送', '', 'ZJS');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('9', '16', '天天快递', '', 'TTKDEX');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('10', '20', '德邦快递', '', 'DBL');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('11', '22', 'EMS经济快递', '', 'EYB');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('12', '24', 'EMS', '', 'EMS');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('13', '42', '佳吉物流', '', 'CNEX');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('14', '46', '中铁快运', '', 'CRE');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('15', '54', '天地华宇', '', 'HOAU');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('16', '56', '快捷快递', '', 'FAST');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('17', '58', '邮政国内小包', '', 'POSTB');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('18', '64', '德邦物流', '', 'DBL');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('19', '72', '邮政平邮', '', 'POST');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('20', '89', '安能物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('21', '95', '包裹/平邮/挂号信', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('22', '249', '平安达腾飞', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('23', '327', '远成物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('24', '339', '邮政EMS速递', '', 'EMS');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('25', '359', '中邮物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('26', '381', '中铁物流', '', 'CRE');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('27', '394', '路路通物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('28', '396', '联合德通', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('29', '398', '欧姆讯物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('30', '400', '航丰物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('31', '402', '腾达物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('32', '404', '宏驰物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('33', '406', '呈龙物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('34', '408', '龙佳物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('35', '410', '电商中转', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('36', '412', '城市之星物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('37', '414', '龙之峰物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('38', '416', '昌隆物流', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('39', '418', '路安达货运', '', '');
+INSERT INTO `api_zhe800_logistics_companies` VALUES ('40', '420', '广宁货运', '', '');

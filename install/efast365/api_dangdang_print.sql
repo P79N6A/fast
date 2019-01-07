@@ -1,0 +1,28 @@
+DROP TABLE IF EXISTS `api_dangdang_print`;
+CREATE TABLE `api_dangdang_print` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `shop_code` varchar(100) DEFAULT NULL COMMENT '店铺代码',
+  `receiptTitle` varchar(100) DEFAULT NULL COMMENT '面单标题',
+  `shopWarehouse` varchar(50) DEFAULT NULL COMMENT '商家所在仓库',
+  `orderID` varchar(50) NOT NULL COMMENT '订单编号',
+  `orderCreateTime` varchar(50) DEFAULT NULL COMMENT '订单创建时间',
+  `consigneeName` varchar(50) DEFAULT NULL COMMENT '收货人姓名',
+  `consigneeAddr` varchar(255) DEFAULT NULL COMMENT '收货地址',
+  `consigneeAddr_State` varchar(50) DEFAULT NULL COMMENT '收货国家',
+  `consigneeAddr_Province` varchar(50) DEFAULT NULL COMMENT '收货省份',
+  `consigneeAddr_City` varchar(50) DEFAULT NULL COMMENT '收货市',
+  `consigneeAddr_Area` varchar(50) DEFAULT NULL COMMENT '收货区',
+  `consigneePostcode` varchar(50) DEFAULT NULL COMMENT '邮编',
+  `consigneeTel` varchar(50) DEFAULT NULL COMMENT '收货人固定电话',
+  `consigneeMobileTel` varchar(50) DEFAULT NULL COMMENT '收货人移动电话',
+  `shopName` varchar(50) DEFAULT NULL COMMENT '店铺名称',
+  `shopID` varchar(50) DEFAULT NULL COMMENT '店铺编号',
+  `consignerName` varchar(100) DEFAULT NULL COMMENT '发货人名称',
+  `consignerTel` varchar(100) DEFAULT NULL COMMENT '发货人电话',
+  `consignerAddr` varchar(255) DEFAULT NULL COMMENT '发货人地址',
+  `totalBarginPrice` decimal(10,2) DEFAULT NULL COMMENT '总价',
+  `sendGoodsTime` varchar(255) DEFAULT NULL COMMENT '送货时间',
+  `expressCompany` varchar(100) DEFAULT NULL COMMENT '快递公司',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `orderID` (`orderID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

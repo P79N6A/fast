@@ -1,0 +1,5 @@
+INSERT INTO `order_check_strategy` (`check_strategy_code`, `is_active`, `instructions`, `content`, `lastchanged`) VALUES ('not_auto_confirm_with_goods', '1', '配置商品后，即订单包含此商品不会自动确认', '', '2015-12-15 11:18:02');
+INSERT INTO `order_check_strategy` (`check_strategy_code`, `is_active`, `instructions`, `content`, `lastchanged`) VALUES ('not_auto_confirm_with_shop', '1', '配置平台/店铺后，即此平台/店铺下订单不会自动确认', '', '2015-12-17 10:14:47');
+INSERT INTO `order_check_strategy` (`check_strategy_code`, `is_active`, `instructions`, `content`, `lastchanged`) VALUES ('auto_confirm_time', '0', '配置时间点后，即系统会按此时间点执行自动确认服务', '', '2015-12-16 17:53:53');
+INSERT INTO `order_check_strategy` (`check_strategy_code`, `is_active`, `instructions`, `content`, `lastchanged`) VALUES ('protect_time', '1', '配置保护期后，即系统在此时间内不会自动确认', '', '2015-12-17 10:03:11');
+INSERT INTO `order_check_strategy` (`check_strategy_code`, `is_active`, `instructions`, `content`, `lastchanged`) VALUES ('not_auto_confirm_with_store', '0', '配置仓库后，即此仓库对应的订单不会自动确认', '', '');

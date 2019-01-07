@@ -1,0 +1,14 @@
+INSERT INTO `alipay_account_item` VALUES ('1', '001', '交易收款', '1', '2015-09-01 08:02:10');
+INSERT INTO `alipay_account_item` VALUES ('2', '002', '天猫佣金退款', '1', '2015-09-01 08:05:26');
+INSERT INTO `alipay_account_item` VALUES ('3', '003', '代扣交易退回积分', '1', '2015-09-01 08:05:27');
+INSERT INTO `alipay_account_item` VALUES ('4', '004', '淘宝客佣金退款', '1', '2015-09-01 08:05:27');
+INSERT INTO `alipay_account_item` VALUES ('5', '005', '信用卡支付服务费退款', '1', '2015-09-01 08:05:29');
+INSERT INTO `alipay_account_item` VALUES ('6', '101', '天猫佣金', '2', '2015-09-01 08:06:30');
+INSERT INTO `alipay_account_item` VALUES ('7', '102', '代扣返点积分', '2', '2015-09-01 08:06:30');
+INSERT INTO `alipay_account_item` VALUES ('8', '103', '淘宝客佣金代扣款', '2', '2015-09-01 08:06:31');
+INSERT INTO `alipay_account_item` VALUES ('9', '104', '信用卡支付服务费', '2', '2015-09-01 08:06:32');
+INSERT INTO `alipay_account_item` VALUES ('10', '105', '售后维权扣款', '2', '2015-09-01 08:06:33');
+INSERT INTO `alipay_account_item` VALUES ('11','106', '分销退款', '2', '2015-09-01 08:06:33');
+INSERT INTO `alipay_account_item` VALUES ('12','107', '商家保证金理赔', '2', '2015-09-01 08:06:33');
+INSERT INTO `alipay_account_item` VALUES ('13','108', '运费险', '2', '2016-02-18 08:06:33');
+INSERT INTO `alipay_account_item` VALUES ('14','109', '花呗支付服务费', '2', '2016-03-01 08:06:33');
