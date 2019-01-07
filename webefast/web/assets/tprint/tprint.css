@@ -1,0 +1,71 @@
+/* 
+    Created on : 2015-10-28, 16:39:41
+    Author     : wq
+*/
+.print_main{
+
+}
+.print_main_left{
+    float:left;
+    height:auto;
+    width:80%;
+}
+.print_main_right{
+  float:right;
+    height:100%;
+    width:19%;
+}
+
+.print_content{
+    width: 100%;
+}
+.print_top{
+    height: 40px;
+     background-color:#e8e9ef;
+      width: 100%;
+     text-align: center; 
+
+ //    border:1px solid  #B9BFC5;
+}
+
+.print_control{
+   margin:0 auto; width:210mm; height:35px; 
+   padding-left: 3px;
+   text-align: left;
+
+}
+.print_frame{
+    float:left;
+    height:auto;
+    width:100%;
+    background-color:darkgrey;
+   text-align: center;
+
+}
+.print_frame iframe{
+     border: 0px;
+     margin:0 auto;
+}
+
+
+.print_info{
+      height:100%;
+      width: 19%;
+      padding-left: 3px;   
+}
+.row .control-group{
+    float:left;
+}
+.row .controls {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+    position: relative;
+}
+.row .control-label {
+    display: inline-block;
+    float: left;
+    line-height: 30px;
+    text-align: left;
+}

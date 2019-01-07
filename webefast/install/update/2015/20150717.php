@@ -1,0 +1,21 @@
+<?php
+$u = array();
+$u['FSF-1456'] = array(
+	"INSERT INTO `sys_action` VALUES ('4010108', '4010100', 'act', '批量转单', 'oms/sell_record/pl_td_tran', '2', '1', '0', '1','0');",
+);
+$u['FSF-1488'] = array(
+	"insert into `sys_params` (`param_id`, `param_code`, `parent_code`, `param_name`, `type`, `form_desc`, `value`, `sort`, `remark`, `lastchanged`, `memo`)
+values('','wave_print','waves_property','S002_002    快递单打印完成后，自动刷新页面','radio','[\"关闭\",\"开启\"]','1','0.00','1-开启 0-关闭','2015-07-17 11:51:17','快递单打印完成后，若设置为\"关闭\"，则快递单打印完成后，不会自动刷新页面,否则自动刷新页面');",
+);
+$u['FSF-470'] = array(
+		"ALTER TABLE `danju_print` ADD COLUMN `danju_print_content_pici` LONGTEXT COMMENT ' 带批次单据打印模板';",
+		"ALTER TABLE `danju_print` ADD COLUMN `print_html_pici` LONGTEXT COMMENT '打印内容(相对干净html)带批次';",
+		"UPDATE `danju_print`  SET print_html_pici = '<div id=\"div_print_page_top_area\"></div>\r\n						<div id=\"div_print_main_major_area\"><div id=\"div_table_main_area\" class=\"printTable\"><!--<replace_empty>--><!--</replace_empty>--><table id=\"table_main_area\" class=\"\" style=\"width: 787px;\"><tbody><tr><td allow_edit=\"true\" style=\"padding: 0px; margin: 0px; width: 783px;\" class=\"\" colspan=\"4\" rel_field=\"\">波次拣货单</td><td allow_edit=\"true\" style=\"padding: 0px; margin: 0px; width: 194px; display: none;\" class=\"\" colspan=\"1\" rel_field=\"\"></td><td allow_edit=\"true\" style=\"padding: 0px; margin: 0px; width: 195px; display: none;\" class=\"\" colspan=\"1\" rel_field=\"\"></td><td allow_edit=\"true\" style=\"padding: 0px; margin: 0px; width: 197px; display: none;\" class=\"\" colspan=\"1\" rel_field=\"\"></td></tr><tr><td allow_edit=\"true\" style=\"padding: 0px; margin: 0px; text-align: center;\" class=\"\" rel_field=\"\">单据编号:</td><td allow_edit=\"false\" style=\"padding:0px; margin:0px;\" class=\"\" rel_field=\"record_code\"><span id=\"main_area_record_code\" rel_field=\"record_code\" style=\"cursor: move;\" class=\"\">单据编号</span></td><td allow_edit=\"true\" style=\"padding: 0px; margin: 0px; text-align: center;\" class=\"\" rel_field=\"\">仓库名称:</td><td allow_edit=\"false\" style=\"padding:0px; margin:0px;\" class=\"\" rel_field=\"store_name\"><span id=\"main_area_store_name\" rel_field=\"store_name\" style=\"cursor: move;\" class=\"\">仓库名称</span></td></tr><tr><td allow_edit=\"true\" style=\"padding: 0px; margin: 0px; text-align: center;\" class=\"\" rel_field=\"\">数量:</td><td allow_edit=\"false\" style=\"padding:0px; margin:0px;\" class=\"\" rel_field=\"valide_goods_count\"><span id=\"main_area_valide_goods_count\" rel_field=\"valide_goods_count\" style=\"cursor: move;\" class=\"\">数量</span></td><td allow_edit=\"true\" style=\"padding: 0px; margin: 0px; text-align: center;\" class=\"\" rel_field=\"\">金额:</td><td allow_edit=\"false\" style=\"padding:0px; margin:0px;\" class=\"\" rel_field=\"total_amount\"><span id=\"main_area_total_amount\" rel_field=\"total_amount\" style=\"cursor: move;\" class=\"\">金额</span></td></tr></tbody></table></div><div id=\"div_table_detail_area\" class=\"printTable\" style=\"\"><table id=\"table_detail_area\" cellspacing=\"0\" cellpadding=\"0\" border=\"1\" class=\"\" style=\"width: 787px;\"><thead><tr><th id=\"table_detail_area_th_goods_code\" rel_field=\"goods_code\" style=\"width: 129px;\">商品代码</th><th id=\"table_detail_area_th_goods_name\" rel_field=\"goods_name\" style=\"width: 129px;\">商品名称</th><th id=\"table_detail_area_th_spec1_name\" rel_field=\"spec1_name\" style=\"width: 129px;\">规格1</th><th id=\"table_detail_area_th_spec2_name\" rel_field=\"spec2_name\" style=\"width: 129px;\">规格2</th><th id=\"table_detail_area_th_num\" rel_field=\"num\" style=\"width: 129px;\">数量</th>\r\n						<th id=\"table_detail_area_th_shelf_code\" rel_field=\"shelf_code\" style=\"width: 133px;\">货架代码</th>\r\n						<th id=\"table_detail_area_th_lof_no\" rel_field=\"lof_no\" style=\"width: 133px;\">批次</th>\r\n						</tr></thead><tbody><!--<table_detail_area_replace>--><!--</table_detail_area_replace>--></tbody></table></div></div>\r\n						<div id=\"div_print_page_bottom_area\"></div>'
+		 WHERE danju_print_code = 'oms_waves_record'; ",
+);
+
+$u['FSF-1281'] = array(
+		"UPDATE sys_action SET parent_id = '4000000',sort_order='5' WHERE action_name = '外包仓管理';",
+);
+
+?>

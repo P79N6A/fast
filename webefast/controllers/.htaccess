@@ -1,0 +1,13 @@
+	php_value auto_prepend_file		"C:/baison/src/fastapp/boot/req_init.php"
+	php_value auto_append_file		"C:/baison/src/fastapp/boot/req_final.php"
+	php_value date.timezone			"Asia/Shanghai"
+	php_value html_errors			0
+	
+	php_value display_errors		1
+	#error_reporting -> E_ALL:30719,E_ERROR:1,E_WARNING:2,E_PARSE:4,E_NOTICE:8
+	php_value error_reporting		30719	
+
+	php_value	session.cookie_path  	"/webapp/"
+	php_value	session.name			"FAPPSESSID"	
+	#php_value	session.cookie_lifetime 0
+	#php_value	session.cookie_domain 

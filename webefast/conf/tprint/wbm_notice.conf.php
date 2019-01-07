@@ -1,0 +1,46 @@
+<?php
+
+return array(
+    'template' => 'report',
+    'data_source'=>array(
+        'model'=> 'wbm/NoticeRecordModel',
+        'method'=> 'print_data_default',
+     ),
+    'record' => array(
+            '单据编号' => 'record_code',
+            '原单号' => 'init_code',
+            '下单时间' => 'order_time',
+            '分销商' => 'distributor_name',
+            '仓库' => 'store_name',
+            '折扣' => 'rebate',
+            '业务日期' => 'record_time',
+            '总数量' => 'num',
+            '总金额' => 'money',
+            '备注' => 'remark',
+            '完成数量' => 'finish_num',
+            '打印时间' => 'print_time',
+            '打印人' => 'print_user_name',
+    ),
+    'detail' => array(
+            '商品名称' => 'goods_name',
+            '商品编码' => 'goods_code',
+            '商品简称' => 'goods_short_name',
+            '规格1' => 'spec1_name',
+            '规格1代码' => 'spec1_code',
+            '规格2' => 'spec2_name',
+            '规格2代码' => 'spec2_code',
+            '单价' => 'price',
+            '批发价' => 'pf_price',
+            '数量' => 'num',
+            '完成数' => 'finish_num',
+            '金额' => 'money',
+            '商品条形码' => 'barcode',
+            '库位' => 'shelf_code',
+            '商品分类' => 'category_name',
+            '商品品牌' => 'brand_name',
+            '商品季节' => 'season_name',
+            '商品重量' => 'weight',
+            '批次' => 'lof_no',
+    ),
+);
+

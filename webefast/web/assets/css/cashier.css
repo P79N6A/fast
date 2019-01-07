@@ -1,0 +1,71 @@
+/* CSS reset */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{ margin:0;padding:0;}
+table{ border-collapse:collapse; border-spacing:0;}
+.clear{clear: both;}
+a{ text-decoration:none;}
+
+ol li,ul li{ list-style:none;}
+.clearfix:after{clear:both;content:".";display:block;height:0;visibility:hidden;}
+.clearfix{zoom:1;}
+
+#content{ height:100%;; overflow:auto;}
+#pos{width:95%; margin:0 auto;}
+#pos #main{margin-top:10px;}
+
+#shop_info { font-family:"宋体"; white-space:nowrap;}
+#shop_info ul{ border-top:none; height:30px; background:#fff; border-bottom:1px solid #ccc; margin-top:22px; white-space:nowrap;}
+#shop_info li.shop_name{float:left; width:15%; height:26px; line-height:26px; border-right:1px solid #d9d9d9; font-size:16px; color:#686868; font-weight:bold;}
+#shop_info li.cur_info{float:left; height:26px; line-height:26px; border-left:1px solid #ffffff; padding-left:11px;  color:#686868; }
+#shop_info li.cur_info b{ color:#40648a; font-size:16px; font-weight:bold;font-family:"宋体";padding:0 30px 0 15px; vertical-align:middle; }
+.shop_name_icon{width:15px; height:15px; background-position:-2px -46px; margin-right:6px; line-height:17px; vertical-align:auto;}
+#shop_info li.up_box{ float:right; height:28px; margin-right: 20px;}
+.display{display:none;}
+
+/*表格*/
+table{ width:100%;font-size:12px; border:1px solid #bababa; border-top:none; overflow:auto; }
+table tr:hover{background-color:#fff9d7;}
+table tbody td{ height:30px; color:#333; border:1px solid #d4d4d4;}
+#goods{ width:75%; float:left; position:relative; height:373px; border:1px solid #cfd0d0; border-top:none;}
+#goods_table{ height:344px; overflow-y:scroll; border-bottom:1px solid #cfd0d0; }
+#goods_table th{border:1px solid #cfd0d0; height:28px; line-height:28px; background:url(../images/table/th_bg1.png) left top repeat-x; border-right:none; border-left:none;}
+#goods .w1{width:4%;}
+#goods .w2{width:15%;}
+#goods .w3{width:10%;}
+#goods .w4{width:7%;}
+#goods table{border:none; border-bottom:1px solid #cfd0d0;}
+#goods td{ text-align:center; border:none; border-top:1px solid #cfd0d0; border-right:1px solid #cfd0d0;}
+.td_goods{height:30px; color:#333; border:1px solid #d4d4d4;text-align:center; border:none; border-top:1px solid #cfd0d0; border-right:1px solid #cfd0d0;}
+.tr_click{background-color:#FFD700;}
+
+/*表格底部备注*/
+.state_guides{height:28px; line-height:28px; background:url(../images/table/table_foot1.png) left top repeat-x; color:#686868;  white-space:nowrap; overflow:hidden; }
+.state_guides span{ display:inline-block;overflow:hidden; padding:0 10px; white-space:nowrap; }
+.state_guides span.remarks{ width:60%;white-space:nowrap; padding-right:10px; overflow:hidden;text-overflow:ellipsis; }
+.state_guides span b{color:#40648a; font-size:14px; font-weight:bold; padding-left:10px;}
+.state_guides .remarks{height:auto;}	
+
+/*右侧结算信息*/
+#record_info{float:right; width:23%;}
+#record_info #barcode{ width:97%; height: 70px;line-height:70px;font-size: 30px; background:#fff;border:1px solid #80a8c3;}
+#record_info dl{ margin-top:5px; padding-left:10px;  padding-bottom:22px;}
+#record_info dd{ display: inline-block; width:100%;line-height:150%; color:#000;font-size: 30px;margin-top: 15px;}
+#record_info dd #num,#amount, #discount{ color:#e20808;}
+#record_info label{ float:left;}
+
+/*操作面板*/
+#controls{float: right;margin-right: 10px;}
+#controls .detail-row{margin-bottom: 10px;}
+#controls .detail-row a{width:80px;height: 25px;margin-left: 10px;padding-top: 5px;}
+
+/*快捷键*/
+/*.shortcut_keys{display:none; height:46px; background:#efefef; border:1px solid #fff; overflow-y:scroll; display:none;}
+.shortcut_keys label{ float:left; font-weight:bold; color:#686868; margin:6px 0 0 10px}
+#goods .shortcut_keys dl{ margin-left:60px; width:auto; position:static;}
+#goods .shortcut_keys dl dd{ border:none; float:left; font-size:12px; color:#818181; margin-right:5px; height:auto; line-height: normal; margin-top:6px;  }
+#goods .shortcut_keys dl dd span{ color:#37629d;}*/
+
+#footer_info{  width:100%; margin-top:15px;}
+#footer_info .more_goodbtn{width:100%;}
+#footer_info .more_goodbtn  dd{width:12.5%; text-align:right; margin-bottom:8px;}
+/*.vip_pro{float:left; display:inline-block; width:35%;}
+.vip_pro td{padding-left: 5px;overflow: hidden;}*/

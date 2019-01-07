@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <cote action_id="4000000" action_name="订单管理" action_code="order" sort_order="1" parent_id="0" type="cote">
+        <group action_id="4010000" action_name="平台交易" action_code="oms-trade" sort_order="1" parent_id="90" type="group">
+            <url action_id="4010100" action_name="平台订单列表" action_code="oms/sell_record/trade_list" sort_order="2" parent_id="98" type="url" />
+                <act action_id="2010101" action_name="新增" action_code="base/order_pause_reason/detail#scene=add" type="act" />
+        </group>
+        <group action_id="4020000" action_name="销售订单" action_code="oms-sell" sort_order="1" parent_id="90" type="group">
+            <url action_id="4020400" action_name="订单查询" action_code="oms/sell_record/do_list" sort_order="2" parent_id="91" type="url">
+                <act action_id="4020401" action_name="新增" action_code="oms/sell_record/add" type="act" />
+            </url>
+            <url action_id="4020400" action_name="订单处理" action_code="oms/sell_record/ex_list" sort_order="2" parent_id="91" type="url" />
+        </group>
+    </cote>
+    <cote action_id="5000000" action_name="商品管理" action_code="goods" sort_order="2" parent_id="0" type="cote">
+        <group action_id="5010000" action_name="商品属性" action_code="goods-property" sort_order="1" parent_id="100" type="group">
+            <url action_id="5010100" action_name="季节" action_code="base/season/do_list" sort_order="2" parent_id="106" type="url" />
+            <url action_id="5010200" action_name="年份" action_code="base/year/do_list" sort_order="2" parent_id="106" type="url" />
+            <url action_id="5010300" action_name="品牌" action_code="prm/brand/do_list" sort_order="2" parent_id="106" type="url" />
+            <url action_id="5010400" action_name="分类" action_code="prm/category/do_list" sort_order="2" parent_id="106" type="url" />
+            <url action_id="5010500" action_name="规格2" action_code="prm/spec2/do_list" sort_order="2" parent_id="106" type="url" />
+            <url action_id="5010600" action_name="规格1" action_code="prm/spec1/do_list" sort_order="2" parent_id="106" type="url" />
+        </group>
+        <group action_id="5020000" action_name="商品管理" action_code="goods-goods" sort_order="3" parent_id="100" type="group">
+            <url action_id="5020100" action_name="商品条码管理" action_code="prm/goods_barcode/do_list" sort_order="2" parent_id="101" type="url" />
+            <url action_id="5020200" action_name="商品列表" action_code="prm/goods/do_list" sort_order="2" parent_id="101" type="url" />
+            <url action_id="5020300" action_name="组合商品管理" action_code="kehu/kehu/do_list" sort_order="2" parent_id="101" type="url" />
+            <url action_id="5020400" action_name="套餐商品管理" action_code="kehu/kehu/do_list" sort_order="2" parent_id="101" type="url" />
+            <url action_id="5020500" action_name="条码生成方案" action_code="base/barcode_generate_scheme/do_list" sort_order="2" parent_id="101" type="url" />
+        </group>
+        <group action_id="5030000" action_name="商品铺货" action_code="goods-api" sort_order="3" parent_id="100" type="group">
+            <url action_id="5030100" action_name="淘宝商品管理" action_code="api/base_item/do_list" sort_order="2" parent_id="101" type="url" />
+        </group>
+    </cote>
+    <cote action_id="2000000" action_name="基础数据" action_code="base" sort_order="8" parent_id="0" type="cote">
+        <group action_id="2010000" action_name="订单档案" action_code="base-prm" sort_order="0" parent_id="113" type="group">
+            <url action_id="2010100" action_name="订单挂起原因" action_code="base/order_pause_reason/do_list" sort_order="0" parent_id="123" type="url">
+                <act action_id="2010101" action_name="新增" action_code="base/order_pause_reason/detail#scene=add" type="act" />
+                <act action_id="2010102" action_name="编辑" action_code="base/order_pause_reason/detail#scene=edit" type="act" />
+                <act action_id="2010103" action_name="删除" action_code="base/order_pause_reason/delete" type="act" />
+            </url>
+            <url action_id="2010200" action_name="订单问题原因" action_code="base/order_problem_reason/do_list" sort_order="0" parent_id="123" type="url">
+                <act action_id="2010201" action_name="新增" action_code="base/order_problem_reason/detail#scene=add" type="act" />
+                <act action_id="2010202" action_name="编辑" action_code="base/order_problem_reason/detail#scene=edit" type="act" />
+                <act action_id="2010203" action_name="删除" action_code="base/order_problem_reason/delete" type="act" />
+            </url>
+            <url action_id="2010300" action_name="支付方式" action_code="base/payment/do_list" sort_order="0" parent_id="123" type="url">
+                <act action_id="2010301" action_name="新增" action_code="base/payment/detail#scene=add" type="act" />
+                <act action_id="2010302" action_name="编辑" action_code="base/payment/detail#scene=edit" type="act" />
+                <act action_id="2010303" action_name="删除" action_code="base/payment/delete" type="act" />
+            </url>
+            <url action_id="2010400" action_name="订单销售渠道" action_code="base/sale_channel/do_list" sort_order="0" parent_id="123" type="url">
+                <act action_id="2010401" action_name="新增" action_code="base/sale_channel/detail#scene=add" type="act" />
+                <act action_id="2010402" action_name="编辑" action_code="base/sale_channel/detail#scene=edit" type="act" />
+                <act action_id="2010403" action_name="删除" action_code="base/sale_channel/delete" type="act" />
+            </url>
+            <url action_id="2010500" action_name="快递公司" action_code="base/shipping/do_list" sort_order="0" parent_id="123" type="url">
+                <act action_id="2010501" action_name="新增" action_code="base/shipping/detail#scene=add" type="act" />
+                <act action_id="2010502" action_name="编辑" action_code="base/shipping/detail#scene=edit" type="act" />
+                <act action_id="2010503" action_name="删除" action_code="base/shipping/delete" type="act" />
+            </url>
+            <url action_id="2010600" action_name="订单标签" action_code="base/order_label/do_list" sort_order="0" parent_id="123" type="url">
+                <act action_id="2010601" action_name="新增" action_code="base/order_label/detail#scene=add" type="act" />
+                <act action_id="2010602" action_name="编辑" action_code="base/order_label/detail#scene=edit" type="act" />
+                <act action_id="2010603" action_name="删除" action_code="base/order_label/delete" type="act" />
+            </url>
+            <url action_id="2010700" action_name="商品退货原因" action_code="base/return_reason/do_list" sort_order="0" parent_id="123" type="url">
+                <act action_id="2010701" action_name="新增" action_code="base/return_reason/detail#scene=add" type="act" />
+                <act action_id="2010702" action_name="编辑" action_code="base/return_reason/detail#scene=edit" type="act" />
+                <act action_id="2010703" action_name="删除" action_code="base/return_reason/delete" type="act" />
+            </url>
+            <url action_id="2010800" action_name="地址区域列表" action_code="base/taobao_area/do_list" sort_order="0" parent_id="123" type="url">
+            </url>
+            <url action_id="2010900" action_name="退单标签" action_code="base/return_label/do_list" sort_order="0" parent_id="123" type="url">
+                <act action_id="2010901" action_name="新增" action_code="base/return_label/detail#scene=add" type="act" />
+                <act action_id="2010902" action_name="编辑" action_code="base/return_label/detail#scene=edit" type="act" />
+                <act action_id="2010903" action_name="删除" action_code="base/return_label/delete" type="act" />
+            </url>
+        </group>
+        <group action_id="2020000" action_name="仓库档案" action_code="base-store" sort_order="0" parent_id="113" type="group">
+            <url action_id="2020100" action_name="仓库列表" action_code="base/store/do_list" type="url">
+                <act action_id="2020101" action_name="新增" action_code="base/store/detail#scene=add" type="act" />
+                <act action_id="2020102" action_name="编辑" action_code="base/store/detail#scene=edit" type="act" />
+                <act action_id="2020103" action_name="删除" action_code="base/store/delete" type="act" />
+            </url>
+            <url action_id="2020200" action_name="仓库库位管理" action_code="prm/store_seat_mgr/do_list" type="url">
+                <act action_id="2020201" action_name="新增" action_code="prm/store_seat_mgr/detail#scene=add" type="act" />
+                <act action_id="2020202" action_name="编辑" action_code="prm/store_seat_mgr/detail#scene=edit" type="act" />
+                <act action_id="2020203" action_name="删除" action_code="prm/store_seat_mgr/delete" type="act" />
+            </url>
+        </group>
+        <group action_id="2030000" action_name="打印模版配置" action_code="base-print-tpl" sort_order="0" parent_id="113" type="group">
+            <url action_id="2030100" action_name="打印模版" action_code="sys/danju_print/do_list" type="url">
+                <!--<act action_id="2030101" action_name="新增" action_code="base/shipping_print_tpl/detail#scene=add" type="act" />-->
+                <act action_id="2030102" action_name="编辑" action_code="sys/danju_print/edit_print#scene=edit" type="act" />
+                <!--<act action_id="2030103" action_name="删除" action_code="base/shipping_print_tpl/delete" type="act" />-->
+            </url>
+        </group>
+        <group action_id="2040000" action_name="业务类型" action_code="base-business-type" sort_order="0" parent_id="113" type="group">
+            <url action_id="2040100" action_name="库存调整类型" action_code="base/store_adjust_type/do_list" type="url">
+                <act action_id="2040101" action_name="新增" action_code="base/store_adjust_type/detail#scene=add" type="act" />
+                <act action_id="2040102" action_name="编辑" action_code="base/store_adjust_type/detail#scene=edit" type="act" />
+                <act action_id="2040103" action_name="删除" action_code="base/store_adjust_type/delete" type="act" />
+            </url>
+        </group>
+    </cote>
+    <cote action_id="1000000" action_name="系统管理" action_code="sys" sort_order="9" parent_id="0" type="cote">
+        <group action_id="1010000" action_name="系统管理" action_code="sys-sys" sort_order="1" parent_id="113" type="group">
+            <url action_id="1010100" action_name="系统日志（用户日志）" action_code="sys/operatelog/do_list" sort_order="2" parent_id="114" type="url" />
+            <url action_id="1010200" action_name="系统参数" action_code="sys/sys_config/do_list" sort_order="2" parent_id="114" type="url" />
+        </group>
+
+        <group action_id="1020000" action_name="定时任务" action_code="sys-schedule" sort_order="1" parent_id="113" type="group">
+            <url action_id="1020100" action_name="调度计划" action_code="sys/schedule/do_list" sort_order="2" parent_id="120" type="url" />
+            <url action_id="1020200" action_name="任务设置" action_code="sys/task/do_list" sort_order="2" parent_id="120" type="url" />
+        </group>
+        <group action_id="1030000" action_name="用户管理" action_code="sys-user" sort_order="1" parent_id="113" type="group">
+            <url action_id="1030100" action_name="角色列表" action_code="sys/role/do_list" sort_order="2" parent_id="117" type="url">
+                <act action_id="1030101" action_name="查看" action_code="sys/role/detail#scene=view" type="act" />
+                <act action_id="1030102" action_name="新增" action_code="sys/role/detail#scene=add" type="act" />
+                <act action_id="1030103" action_name="编辑" action_code="sys/role/detail#scene=edit" type="act" />
+                <act action_id="1030104" action_name="删除" action_code="sys/role/delete" type="act" />
+                <act action_id="1030105" action_name="启用/停用" action_code="sys/role/update_active" type="act" />
+            </url>
+            <url action_id="1030200" action_name="用户列表" action_code="sys/user/do_list" sort_order="2" parent_id="117" type="url">
+                <act action_id="1030201" action_name="查看" action_code="sys/user/detail#scene=view" type="act" />
+                <act action_id="1030202" action_name="新增" action_code="sys/user/detail#scene=add" type="act" />
+                <act action_id="1030203" action_name="编辑" action_code="sys/user/detail#scene=edit" type="act" />
+                <act action_id="1030204" action_name="删除" action_code="sys/user/delete" type="act" />
+                <act action_id="1030205" action_name="启用/停用" action_code="sys/user/update_active" type="act" />
+                <act action_id="1030211" action_name="重设密码" action_code="sys/user/reset_pwd" type="act" />
+                <act action_id="1030212" action_name="角色列表" action_code="sys/user/role_list" type="act" />
+            </url>
+        </group>
+
+        <group action_id="1040000" action_name="短信服务" action_code="sys-msg" sort_order="1" parent_id="113" type="group">
+            <url action_id="1040100" action_name="短信通道配置" action_code="sys/sms_supplier/do_list" type="url">
+                <act action_id="1040101" action_name="新增" action_code="sys/sms_supplier/detail#scene=add" type="act" />
+                <act action_id="1040102" action_name="编辑" action_code="sys/sms_supplier/detail#scene=edit" type="act" />
+                <act action_id="1040103" action_name="删除" action_code="sys/sms_supplier/delete" type="act" />
+            </url>
+            <url action_id="1040200" action_name="短信模版配置" action_code="sys/sms_tpl/do_list" type="url">
+                <act action_id="1040201" action_name="新增" action_code="sys/sms_tpl/detail#scene=add" type="act" />
+                <act action_id="1040202" action_name="编辑" action_code="sys/sms_tpl/detail#scene=edit" type="act" />
+                <act action_id="1040203" action_name="删除" action_code="sys/sms_tpl/delete" type="act" />
+            </url>
+            <url action_id="1040300" action_name="批量发送短信" action_code="sys/sms_queue/batch_send" type="url">
+                <act action_id="1040301" action_name="删除" action_code="sys/sms_queue/do_batch_send" type="act" />
+            </url>
+            <url action_id="1040400" action_name="发送状态查询" action_code="sys/sms_queue/do_list" type="url">
+
+            </url>
+        </group>
+        
+        <group action_id="1050000" action_name="导入导出模版" action_code="sys-excel" sort_order="1" parent_id="113" type="group">
+            <url action_id="1050100" action_name="导入模版配置" action_code="sys/excel_import/index" type="url">
+
+            </url>
+            <url action_id="1050200" action_name="导出模版配置" action_code="sys/excel_export/index" type="url">
+
+            </url>
+        </group>
+    </cote>
+    <cote action_id="6000000" action_name="进销存管理" action_code="stm" sort_order="10" parent_id="0" type="cote">
+       <group action_id="6010000" action_name="库存管理" action_code="stm-manage" sort_order="1" parent_id="100" type="group">
+            <url action_id="6010100" action_name="调整单" action_code="stm/stock_adjust_record/do_list" sort_order="2" parent_id="106" type="url" />
+        </group>
+        <group action_id="6020000" action_name="库存查询" action_code="stm-search" sort_order="1" parent_id="90" type="group">
+            <url action_id="6020100" action_name="商品库存实时查询" action_code="prm/inv/do_list" sort_order="2" parent_id="91" type="url" />
+        </group>
+    </cote>
+</root>

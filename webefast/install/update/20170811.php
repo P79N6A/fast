@@ -1,0 +1,91 @@
+<?php
+
+$u['1530'] = array(
+    "INSERT INTO `base_area` VALUES ('441901000000', '4', '市下辖乡镇街道', '441900000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001000000', '4', '市下辖乡镇街道', '442000000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901101000', '5', '中堂镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901102000', '5', '东坑镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901103000', '5', '道滘镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901104000', '5', '沙田镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901105000', '5', '高埗镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901106000', '5', '石龙镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901107000', '5', '石排镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901108000', '5', '企石镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901109000', '5', '石碣镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901110000', '5', '洪梅镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901111000', '5', '麻涌镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901112000', '5', '桥头镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901113000', '5', '望牛墩镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901114000', '5', '茶山镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901115000', '5', '谢岗镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901116000', '5', '松山湖', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901117000', '5', '莞城区', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901118000', '5', '南城区', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901119000', '5', '长安镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901120000', '5', '寮步镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901121000', '5', '大岭山镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901122000', '5', '常平镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901123000', '5', '厚街镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901124000', '5', '万江区', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901125000', '5', '樟木头镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901126000', '5', '大朗镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901127000', '5', '塘厦镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901128000', '5', '凤岗镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901129000', '5', '清溪镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901130000', '5', '横沥镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901131000', '5', '东城区', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901132000', '5', '黄江镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('441901133000', '5', '虎门镇', '441901000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001101000', '5', '南朗镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001102000', '5', '小榄镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001103000', '5', '古镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001104000', '5', '坦洲镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001105000', '5', '黄圃镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001106000', '5', '三乡镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001107000', '5', '东凤镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001108000', '5', '横栏镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001109000', '5', '三角镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001110000', '5', '南头镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001111000', '5', '沙溪镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001112000', '5', '五桂山镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001113000', '5', '阜沙镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001114000', '5', '东升镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001115000', '5', '板芙镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001116000', '5', '神湾镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001117000', '5', '港口镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001118000', '5', '大涌镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001119000', '5', '火炬开发区', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001120000', '5', '民众镇', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001121000', '5', '东区街道', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001122000', '5', '西区街道', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001123000', '5', '南区街道', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001124000', '5', '石岐区街道', '442001000000', '', '2017-08-04 23:59:59', '', '');",
+    "INSERT INTO `base_area` VALUES ('442001125000', '5', '沙朗镇', '442001000000', '', '2017-08-04 23:59:59', '', '');"
+);
+
+
+
+$u['1568'] = array(
+"CREATE TABLE `api_weipinhuijit_cancel_order_detail` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `occupied_order_sn` varchar(255) DEFAULT '' COMMENT '库存占用单号',
+  `barcode` varchar(128) DEFAULT '' COMMENT '商品条码',
+  `amount` int(8) DEFAULT '0' COMMENT '商品数量',
+  `brand_id` varchar(64) DEFAULT '' COMMENT '品牌id',
+  `cooperation_no` varchar(255) DEFAULT '' COMMENT '供应商常态合作编码',
+  `warehouse` varchar(128) DEFAULT '' COMMENT '唯品会仓库编码',
+  `sales_source_indicator` int(4) DEFAULT NULL COMMENT '销售来源标示 1:旗舰店0:运营专场 ',
+  `sales_no` varchar(255) DEFAULT '' COMMENT '销售编号',
+  `lastchanged` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '最后修改时间',
+  `create_time` datetime DEFAULT NULL COMMENT '创建时间',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `sn_and_barcode` (`occupied_order_sn`,`barcode`) USING BTREE
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COMMENT='唯品会jit已取消销售订单商品表';"
+);
+
+$u['1535'] = array(
+    "alter TABLE pur_planned_record_detail ADD COLUMN `finish_money` decimal(20,3) DEFAULT '0.000' COMMENT '完成金额';",
+    "alter TABLE pur_planned_record ADD COLUMN `finish_money` decimal(20,3) DEFAULT '0.000' COMMENT '完成金额';",
+    "UPDATE pur_planned_record_detail as r1,(SELECT record_code,rebate FROM pur_planned_record) as r2 set r1.finish_money=r1.finish_num*r1.price*r2.rebate WHERE r1.record_code=r2.record_code;",
+    "UPDATE pur_planned_record as r1,(SELECT sum(finish_money) as finish_money_all,record_code FROM pur_planned_record_detail GROUP BY record_code) as r2 set r1.finish_money=r2.finish_money_all WHERE r1.record_code=r2.record_code;"
+);
